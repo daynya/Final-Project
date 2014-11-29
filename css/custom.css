@@ -10,6 +10,11 @@ body {
 	font-size: 1.4em;
 }
 
+span {
+	font-family: helvetica, sans-serif;
+	font-size: 2em;
+}
+
 nav {
 	float: right;
 	margin-top: 15%;
@@ -41,6 +46,10 @@ img {
 	margin-top: 2.5%;
 }
 
+#main-photo {
+	width: 100%;
+}
+
 #logo {
 	max-height: 150px;
 	margin-bottom: 15%;
@@ -53,16 +62,11 @@ img {
 	margin: auto;
 }
 
-.thumbs {
-	box-shadow: 2px 2px 5px 0 #625F63;
-	margin: 3.3%;
-	width: 18%;
-}
-
 #about {
 	font-size: 1.8em;
 	line-height: 1.8em;
 	margin-top: 3%;
+	margin-bottom: 5%;
 }
 
 #about a {
@@ -110,9 +114,15 @@ input {
 	padding: 5px;
 }
 
-footer {
-	color: #8F8F8F;
-	clear: both;
+input:focus, #message:focus {
+	outline-color: #fe9194;
+}
+
+footer img {
+	max-height: 100px;
+	float: left;]
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
 #main-nav a:hover {
@@ -127,21 +137,60 @@ footer {
 	display: none;
 }
 
+.fluidbox-wrap {
+	float: left;
+	box-shadow: 2px 2px 5px 0 #625F63;
+	margin: 3.3%;
+}
+
+#linkedIn {
+	max-width: 50px;
+	margin-top: 40px;
+	margin-right: 10px;
+}
+
+
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
+	#container {
+		width: 100%;
+	}
+
+	header {
+		width: 100%;
+	}
+
 	#logo {
+		float: left;
+		margin-right: 2%;
+		max-height: 150px;
+		margin-bottom: 20%;
+	}
+
+	span.greeting, .greeting {
+		clear: both;
 		float: left;
 	}
 
+	span.greeting {
+		margin-bottom: 2%;
+	}
 
 	#thumb-gallery {
 		clear: both;
+		padding-left: 19%;
+		padding-right: 19%;
 	}
 
 	.thumbs {
-		width: 25%;
-		max-width: 150px;
+		width: 40%;
+	}
+
+	.fluidbox-wrap {
+		float: left;
+		box-shadow: 2px 2px 5px 0 #625F63;
+		margin: 4%;
 	}
 
 	#menu-icon, #menu-icon-image {
@@ -149,15 +198,14 @@ footer {
 		float: right;
 		margin: 10px;
 		display: block;
+		margin-top: 17%;
 	}
 
 	nav {
 		text-align: left;
 		margin: 20px;
-		float: left;
+		float: right;
 		display: none;
-		width: 100%;
-		padding: 0 20px 0 20px;
 	}
 
 	#main-nav a {
@@ -168,143 +216,126 @@ footer {
 		text-align: right;
 		margin: 0;
 		background-color: #8f8f8f;
+		color: white;
+	}
+
+	#main-photo {
+		width: 100%;
+		clear: both;
+		float: left;
+		margin: auto;
+		margin-bottom: 10%;
+	}
+
+	#about {
+		clear: both;
+	}
+
+	footer {
+		clear: both;
+	}
+
+	legend, input, form, label, #first-name, #website, #message {
+		clear: both;
+		float: left;
+		margin: 0;
+		margin-top: 2%;
+	}
+
+	#message {
+		width: 85%;
 	}
 
 }
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
-	
+
+	#container {
+		width: 100%;
+	}
+
+	header {
+		width: 100%;
+	}
+
+	#logo {
+		float: left;
+		margin-right: 2%;
+		max-height: 150px;
+		margin-bottom: 20%;
+	}
+
+	span.greeting, .greeting {
+		clear: both;
+		float: left;
+	}
+
+	span.greeting {
+		margin-bottom: 2%;
+	}
+
 	#thumb-gallery {
-		width: 70%;
+		clear: both;
+		padding-left: 12%;
+		padding-right: 12%;
 	}
 
 	.thumbs {
-		margin: 3.2%;
-		width: 40%;
-		max-width: 250px;
+		margin: 10%;
 	}
 
-}
-
-/*
-
-	header {
-		padding-bottom: 10px;
+	.fluidbox-wrap {
 		float: left;
-		width: 100%;
+		box-shadow: 2px 2px 5px 0 #625F63;
+		margin: 10%;
 	}
 
-	#menu-icon, img {
+	#menu-icon, #menu-icon-image {
 		height: 40px;
 		float: right;
 		margin: 10px;
 		display: block;
+		margin-top: 37%;
 	}
 
-	#container nav {
+	nav {
 		text-align: left;
 		margin: 20px;
-		float: left;
+		float: right;
 		display: none;
-		width: 100%;
-		padding: 0 20px 0 20px;
 	}
 
-	#container nav a {
+	#main-nav a {
 		width: 60%;
 		float: right;
 		padding: 10px 20px 10px 0;
 		border-top: 1px solid #777;
 		text-align: right;
 		margin: 0;
-		background-color: #222;
+		background-color: #8f8f8f;
+		color: white;
 	}
 
-	h1 {
-		font-size: 1.6em;
+	#main-photo {
+		width: 70%;
+		clear: both;
 		float: left;
-		width: 60%;
+		margin: auto;
 	}
 
-	h2 {
-		display: none;
+	#about {
+		clear: both;
 	}
 
-	#marquee {
-		height: 550px;
-	}
-
-	#marquee div {
-		width: 100%;
+	legend, input, form, label, #first-name, #website, #message {
+		clear: both;
+		float: left;
 		margin: 0;
+		margin-top: 2%;
 	}
 
-	.lower-content .col-3 {
-		border-right: none;
-		border-bottom: 1px solid #C6C6C6;
-		width: 100%;
-		padding-bottom: 40px;
+	#message {
+		width: 85%;
 	}
 }
 
-@media screen and (max-width: 480px) {
-
-	header {
-		padding-bottom: 10px;
-		float: left;
-		width: 100%;
-	}
-
-	#menu-icon, img {
-		height: 40px;
-		float: right;
-		margin: 10px;
-		display: block;
-	}
-
-	#container nav {
-		text-align: left;
-		margin: 20px;
-		float: left;
-		display: none;
-		width: 100%;
-		padding: 0 20px 0 20px;
-	}
-
-	#container nav a {
-		width: 60%;
-		float: right;
-		padding: 10px 20px 10px 0;
-		border-top: 1px solid #777;
-		text-align: right;
-		margin: 0;
-		background-color: #222;
-	}
-
-	h1 {
-		font-size: 1.6em;
-		float: left;
-		width: 100%;
-	}
-
-	h2 {
-		display: none;
-	}
-
-	#marquee {
-		height: 850px;
-	}
-
-	#marquee div {
-		width: 100%;
-		margin: 0;
-	}
-
-	.lower-content .col-3 {
-		border-right: none;
-		border-bottom: 1px solid #C6C6C6;
-		width: 100%;
-		padding-bottom: 40px;
-	}
-
-}*/
