@@ -8,11 +8,26 @@ body {
 	font-family: helvetica, sans-serif;
 	line-height: 1.4;
 	font-size: 1.4em;
+	height: 10000px;
 }
 
 span {
 	font-family: helvetica, sans-serif;
 	font-size: 2em;
+}
+
+#looking-for{
+	font: 3em 'Playfair Display', serif;
+	font-weight: 500;
+	font-style: italic;
+	line-height: 2em;
+	margin-right: 2%;
+}
+
+#work {
+	text-transform: uppercase;
+	color: #8F8F8F;
+	font-size: 1.5em;
 }
 
 nav {
@@ -46,8 +61,15 @@ img {
 	margin-top: 2.5%;
 }
 
-#main-photo {
+/*#main-photo {
 	width: 100%;
+	margin-top: 5%;
+}*/
+
+#main-photo {
+    width: 100%;
+    height: 150px;
+    margin-top: 5%;
 }
 
 #logo {
@@ -60,6 +82,13 @@ img {
 #thumb-gallery {
 	padding: 20px;
 	margin: auto;
+	float: left;
+	text-align: center;
+}
+
+.thumbs {
+	display: inline-block;
+	margin: 3%;
 }
 
 #about {
@@ -81,10 +110,6 @@ legend {
 	font: 5em 'Playfair Display', serif;
 	font-style: italic;
 	margin-bottom: 3%;
-}
-
-form {
-	margin-top: 4%;
 }
 
 label {
@@ -179,12 +204,8 @@ footer img {
 
 	#thumb-gallery {
 		clear: both;
-		padding: 0;
+		padding: 10%;
 		margin: auto;
-	}
-
-	.thumbs {
-		width: 40%;
 	}
 
 	.fluidbox-wrap {
@@ -203,7 +224,6 @@ footer img {
 		margin: 20px;
 		float: right;
 		display: none;
-		margin-right: 6%;
 		margin-top: 2%;
 	}
 
@@ -279,14 +299,8 @@ footer img {
 
 	#thumb-gallery {
 		clear: both;
-	}
-
-	.thumbs {
-		margin: 10%;
-	}
-
-	.thumbs.fluidbox {
-		float: left;
+		padding: 10%;
+		margin: auto;
 	}
 
 	.fluidbox-wrap {
