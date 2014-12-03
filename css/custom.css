@@ -8,26 +8,15 @@ body {
 	font-family: helvetica, sans-serif;
 	line-height: 1.4;
 	font-size: 1.4em;
-	height: 10000px;
+}
+
+img {
+	margin-top: 2.5%;
 }
 
 span {
 	font-family: helvetica, sans-serif;
 	font-size: 2em;
-}
-
-#looking-for{
-	font: 3em 'Playfair Display', serif;
-	font-weight: 500;
-	font-style: italic;
-	line-height: 2em;
-	margin-right: 2%;
-}
-
-#work {
-	text-transform: uppercase;
-	color: #8F8F8F;
-	font-size: 1.5em;
 }
 
 nav {
@@ -44,6 +33,22 @@ nav {
 	font-size: 2em;
 	text-decoration: none;
 	transition: all 1s ease;
+	letter-spacing: .1em;
+}
+
+#looking-for {
+	font: 3em 'Playfair Display', serif;
+	font-weight: 500;
+	font-style: italic;
+	line-height: 2em;
+	margin-right: 1%;
+}
+
+#work {
+	text-transform: uppercase;
+	color: #8F8F8F;
+	font-size: 1.3em;
+	letter-spacing: .1em;
 }
 
 span.greeting, .greeting {
@@ -55,16 +60,12 @@ span.greeting, .greeting {
 span.greeting {
 	font-size: 5em;
 	font-style: italic;
-}
-
-img {
-	margin-top: 2.5%;
-}
-
-/*#main-photo {
-	width: 100%;
 	margin-top: 5%;
-}*/
+}
+
+.info {
+	margin-top: 10%
+}
 
 #main-photo {
     width: 100%;
@@ -74,7 +75,7 @@ img {
 
 #logo {
 	max-height: 150px;
-	margin-bottom: 15%;
+	margin-bottom: 5%;
 	margin-top: 0;
 	margin-left: 0;
 }
@@ -91,11 +92,52 @@ img {
 	margin: 3%;
 }
 
+.thumbs:hover, #nav-arrows-top a:hover, #nav-arrows-bottom a:hover {
+	opacity: 0.5;
+}
+
+.fluidbox-wrap {
+	float: left;
+	margin: 3.3%;
+}
+
+#image-detail {
+	margin: auto;
+}
+
+.detail-photo {
+	width: 100%;
+	margin-bottom: 2%;
+	float: left;
+}
+
+#detail-text {
+	font-size: 1.8em;
+	line-height: 1.8em;
+	margin-top: 3%;
+	margin-bottom: 5%;
+	clear: both;
+	float: left;
+}
+
+.title {
+	clear: both;
+	float: left;
+	margin: 0;
+	font: 5em 'Playfair Display', serif;
+	font-weight: 500;
+	font-style: italic;
+	text-align: center;
+	margin-top: 10%;
+}
+
 #about {
 	font-size: 1.8em;
 	line-height: 1.8em;
 	margin-top: 3%;
 	margin-bottom: 5%;
+	clear: both;
+	float: left;
 }
 
 #about a {
@@ -143,6 +185,10 @@ input:focus, #message:focus {
 	outline-color: #fe9194;
 }
 
+footer {
+	clear: both;
+}
+
 footer img {
 	max-height: 100px;
 	float: left;]
@@ -162,19 +208,20 @@ footer img {
 	display: none;
 }
 
-.fluidbox-wrap {
-	float: left;
-	box-shadow: 2px 2px 5px 0 #625F63;
-	margin: 3.3%;
-}
-
 #linkedIn {
 	max-width: 50px;
 	margin-top: 40px;
 	margin-right: 10px;
 }
 
+#nav-arrows-top, #nav-arrows-bottom {
+	float: right;
+	margin-top: 10%
+}
 
+#nav-arrows-bottom {
+	margin-top: 0;
+}
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
@@ -267,6 +314,10 @@ footer img {
 
 	#message {
 		width: 85%;
+	}
+
+	#nav-arrows-top {
+		display: none;
 	}
 
 }
@@ -364,6 +415,10 @@ footer img {
 
 	#message {
 		width: 85%;
+	}
+
+	#nav-arrows-top {
+		display: none;
 	}
 }
 
