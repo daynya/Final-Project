@@ -1,0 +1,3 @@
+outputs:
+  web:
+    - generator: web/output
