@@ -16,6 +16,7 @@
     </head>
 
     <body>
+        {{if not .Obj.Data.suppressNavbar}}
         <nav class="navbar navbar-light">
             <a class="navbar-brand mb-0 h1" href="index.html"></a>
             <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,21 +26,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                        <a href="index.html" class="nav-link">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="designer.html">DESIGNER</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="artist.html">ARTIST</a>
+                            <a href="artist.html" class="nav-link">ARTIST</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">ABOUT</a>
+                        <a href="about.html" class="nav-link">ABOUT</a>
                     </li>
                 </ul>
                 
             </div>
         </nav>
+        {{end}}
         
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
