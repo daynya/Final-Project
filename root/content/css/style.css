@@ -4,8 +4,26 @@
     padding: 0;
 }
 
-html {
+html,
+p,
+h1, 
+h4 {
     font-family: 'Playfair Display', serif;
+}
+
+h4 {
+    font-style: italic;
+}
+
+.about-link {
+    text-decoration: none;
+    transition: .5s;
+    color: black;
+}
+
+.about-link:hover {
+    color: #f83ccf;
+    text-decoration: none;
 }
 
 .row-1 h1, 
@@ -39,11 +57,18 @@ html {
     transition: .5s;
 }
 
+.name,
 .name-artist,
 .name-designer {
     font-family: 'Playfair Display', serif;
-    letter-spacing: .3em;
-    padding: 100px 80px;
+    letter-spacing: .15em;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+
+.name {
+    color: #f83ccf;
 }
 
 .name-artist {
@@ -56,40 +81,55 @@ html {
 
 .thumbnail,
 .thumbnail-design {
-    width: 325px;
-    height: 325px;
-    overflow: hidden;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.thumbnail-design {
-    border: 1px solid #666;
+.thumbnail-design, 
+.full-size-design {
+    border: 1px solid rgb(146, 146, 146);
 }
 
-.thumbnail img {
+.thumbnail img,
+.thumbnail-design img {
     width: 100%;
-    transform: scale(2);
     transition: .5s;
 }
 
-.full-size {
-    width: 100%;
+.container-fluid {
+    margin: 0px 20px;
+}
+
+.full-size,
+.full-size-design {
     height: 325px;
     overflow: hidden;
     margin-bottom: 40px;
     margin-top: 40px;
 }
 
-.full-size img {
+.full-size img,
+.full-size-design img {
     width: 100%;
     transform: scale(1.1);
     transition: .5s;
 }
 
 .thumbnail img:hover,
-.full-size img:hover {
+.full-size img:hover,
+.thumbnail-design img:hover,
+.full-size-design img:hover {
     opacity: .6
+}
+
+.art-title {
+    margin: 40px 0px;
+    font-style: italic;
+}
+
+.art-main {
+    margin-bottom: 40px;
+    width: 100%;
 }
 
 /* Nav */
@@ -99,6 +139,26 @@ html {
     font-family: 'Playfair Display', serif;
     letter-spacing: .3em;
     transition: .5s;
+}
+
+.prev-next {
+    margin-bottom: 20px;
+}
+
+.next-link,
+.prev-link {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: .1em;
+    transition: .5s;
+    color: #888;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.next-link:hover,
+.prev-link:hover {
+    color: #4ea7ad;
+    text-decoration: none;
 }
 
 /* Media Queries */
@@ -131,10 +191,6 @@ html {
     .row-3 h1:hover {
         color: #ad9144
     }
-    .name {
-        font-size: .9em;
-        padding: 20px;
-    }
 }
 
 @media (min-width: 768px) {
@@ -150,10 +206,6 @@ html {
     .row-2 a:hover,
     .row-3 a:hover {
         letter-spacing: .2em;
-    }
-    .name {
-        font-size: 2em;
-        padding: 40px;
     }
 }
 
@@ -184,9 +236,12 @@ html {
     .row-3 a:hover {
         letter-spacing: .6em;
     }
-    .name {
-        font-size: 3em;
-        padding: 70px;
+    .name,
+    .name-artist,
+    .name-designer {
+        font-size: 2.5em;
+        letter-spacing: .5em;
+        padding: 100px 80px;
     }
 }
 
@@ -203,8 +258,11 @@ html {
     .row-3 a:hover {
         letter-spacing: .7em;
     }
-    .name {
-        font-size: 4em;
-        padding: 100px;
+    .name,
+    .name-artist,
+    .name-designer {
+        font-size: 3em;
+        letter-spacing: .8em;
+        padding: 100px 80px;
     }
 }
