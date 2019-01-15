@@ -79,6 +79,11 @@ h4 {
     color: #4ea7ad;
 }
 
+.headshot {
+    display: block;
+    margin: auto;
+ }
+
 .thumbnail,
 .thumbnail-design {
     margin-top: 20px;
@@ -191,6 +196,9 @@ h4 {
     .row-3 h1:hover {
         color: #ad9144
     }
+    .headshot {
+        margin: 20px auto;
+    }
 }
 
 @media (min-width: 768px) {
@@ -207,6 +215,9 @@ h4 {
     .row-3 a:hover {
         letter-spacing: .2em;
     }
+    .headshot {
+        margin: 20px auto;
+    }
 }
 
 @media (min-width: 992px) {
@@ -220,6 +231,9 @@ h4 {
     .row-2 a:hover,
     .row-3 a:hover {
         letter-spacing: .3em;
+    }
+    .headshot {
+        margin: 20px auto;
     }
 }
 
@@ -243,6 +257,9 @@ h4 {
         letter-spacing: .5em;
         padding: 100px 80px;
     }
+    .headshot {
+        margin: auto;
+    }
 }
 
 @media (min-width: 1600px) { 
@@ -264,5 +281,8 @@ h4 {
         font-size: 3em;
         letter-spacing: .8em;
         padding: 100px 80px;
+    }
+    .headshot {
+        margin: auto;
     }
 }
