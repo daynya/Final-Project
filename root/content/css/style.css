@@ -91,7 +91,8 @@ h4 {
 }
 
 .thumbnail-design, 
-.full-size-design {
+.full-size-design,
+.design-main {
     border: 1px solid rgb(146, 146, 146);
 }
 
@@ -132,9 +133,17 @@ h4 {
     font-style: italic;
 }
 
-.art-main {
-    margin-bottom: 40px;
+.art-main,
+.design-main {
+    margin-top: 20px;
+    margin-bottom: 30px;
     width: 100%;
+}
+
+.design-thumb {
+    width: 25%;
+    display: block;
+    margin: auto;
 }
 
 /* Nav */
