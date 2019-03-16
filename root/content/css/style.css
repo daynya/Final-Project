@@ -15,6 +15,12 @@ h4 {
     font-style: italic;
 }
 
+h5 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1rem;
+}
+
 .about-link {
     text-decoration: none;
     transition: .5s;
@@ -131,6 +137,11 @@ h4 {
 .art-title {
     margin: 40px 0px;
     font-style: italic;
+}
+
+.art-main,
+.design-main {
+    margin-bottom: 1rem;
 }
 
 /* Nav */
