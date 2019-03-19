@@ -106,24 +106,16 @@ h5 {
     transition: .5s;
 }
 
-.full-size {
-    max-height: 350px;
-}
-
-.full-size-design {
-    height: 300px;
-}
-
 .full-size,
 .full-size-design {
     overflow: hidden;
     margin: 20px 0px;
+    max-height: 350px;
 }
 
 .full-size img,
 .full-size-design img {
     width: 100%;
-    transform: scale(1.1);
     transition: .5s;
 }
 
@@ -218,9 +210,19 @@ h5 {
     .name-designer {
         font-size: 1.1em;
     }
-    .full-size-design img {
-        transform: scale(1.5);
+
+    .full-size,
+    .full-size-design {
+        height: 300px;
+        overflow: hidden;
     }
+
+    .full-size img,
+    .full-size-design img {
+        width: 100%;
+        height: 300px;
+    }
+
 }
 
 @media (min-width: 768px) {

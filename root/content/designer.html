@@ -5,7 +5,9 @@
         <div class="col-lg-12">
             <div class="full-size-design">
                 <a href="design/arzberger.html">
-                    <img src="design/img/arzberger-weddings.png" alt="Web page">
+                    <img src="design/img/arzberger-weddings.png" id="arz-lg-img" alt="Web page">
+                    <img src="design/img/bean-crop.png" id="arz-md-img" alt="Web page">
+                    <img src="design/img/fiona-miller-bc-thumb.png" id="arz-sm-img" alt="Web page">
                 </a>
             </div>
         </div>
@@ -60,7 +62,7 @@
         <div class="col-lg-12">
             <div class="full-size-design">
                 <a href="design/bean.html">
-                    <img src="design/img/bean-crop.png" alt="Web page">
+                    <img src="design/img/bean-crop.png" class="img-fluid" alt="Web page">
                 </a>
             </div>
         </div>
@@ -115,10 +117,30 @@
         <div class="col-lg-12">
             <div class="full-size-design">
                 <a href="design/yoga-shala.html">
-                    <img src="design/img/ysc-cover-crop.png" alt="Manual">
+                    <img src="design/img/ysc-cover-crop.png" class="img-fluid" alt="Manual">
                 </a>
             </div>
         </div>
     </div>
 
 </div>
+
+<script>
+    $(document).ready(function(){
+        $(window).resize(function(){
+            if ($(window).width() <= 768) {
+                $("#arz-sm-img").show();
+                $("#arz-md-img").hide();
+                $("#arz-lg-img").hide();
+            } else if ($(window).width() >= 769 && $(window).width() <= 990) {
+                $("#arz-sm-img").hide();
+                $("#arz-md-img").show();
+                $("#arz-lg-img").hide();
+            } else {
+                $("#arz-sm-img").hide();
+                $("#arz-md-img").hide();
+                $("#arz-lg-img").show();
+            }
+        }).resize();
+    });
+</script>
