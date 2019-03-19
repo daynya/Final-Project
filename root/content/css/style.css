@@ -211,18 +211,9 @@ h5 {
         font-size: 1.1em;
     }
 
-    .full-size,
     .full-size-design {
-        height: 300px;
-        overflow: hidden;
+        min-height: 300px;
     }
-
-    .full-size img,
-    .full-size-design img {
-        width: 100%;
-        height: 300px;
-    }
-
 }
 
 @media (min-width: 768px) {
@@ -250,6 +241,7 @@ h5 {
     .name-designer {
         font-size: 2em;
     }
+
 }
 
 @media (min-width: 990px) {
