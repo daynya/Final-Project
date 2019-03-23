@@ -110,6 +110,9 @@ h5 {
 .full-size-design {
     overflow: hidden;
     margin: 20px 0px;
+}
+
+.full-size {
     max-height: 350px;
 }
 
@@ -210,10 +213,6 @@ h5 {
     .name-designer {
         font-size: 1.1em;
     }
-
-    .full-size-design {
-        min-height: 300px;
-    }
 }
 
 @media (min-width: 768px) {
@@ -241,6 +240,9 @@ h5 {
     .name-designer {
         font-size: 2em;
     }
+    .full-size-design {
+        max-height: 200px;
+    }
 
 }
 
@@ -258,6 +260,9 @@ h5 {
     }
     .headshot {
         margin: 20px auto;
+    }
+    .full-size-design {
+        max-height: 300px;
     }
 }
 
