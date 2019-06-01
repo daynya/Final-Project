@@ -34,11 +34,7 @@ h5 {
 
 .row-1 h1, 
 .row-2 h1,
-.row-3 h1,
-.mb-0,
-.btn-artist,
-.btn-heading,
-.btn-link {
+.row-3 h1 {
     font-family: 'Playfair Display', serif;
     justify-content: center;
     text-align: center;
@@ -48,28 +44,47 @@ h5 {
 
 .row-1 a:hover,
 .row-2 a:hover,
-.row-3 a:hover,
-.collapse-link a:hover {
+.row-3 a:hover {
     text-decoration: none;
 }
 
-.row-1,
-.card-1 {
+.row-1 {
     background-color: #f83ccf;
     transition: .5s;
 }
 
-.row-2,
-.card-2 {
+.row-2 {
     background-color: #4ea7ad;
     transition: .5s;
 }
 
-.row-3,
-.card-3 {
+.row-3 {
     background-color: #ad9144;
     transition: .5s;
 }
+
+#collapseOne,
+#collapseTwo {
+    justify-content: center;
+    text-align: center;
+    transition: .5s;
+}
+
+.collapse-link {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin: 20px;
+    transition: .5s;
+}
+#collapseOne a:hover,
+.collapse-link a:hover,
+#collapseTwo a:hover {
+    letter-spacing: 0;
+}
+
 
 .name,
 .name-artist,
