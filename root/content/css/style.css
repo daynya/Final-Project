@@ -67,7 +67,9 @@ h5 {
 #collapseTwo {
     justify-content: center;
     text-align: center;
-    transition: .5s;
+    padding: 20px;
+    margin: 30px;
+    border: 2px solid white;
 }
 
 .collapse-link {
@@ -76,15 +78,14 @@ h5 {
     justify-content: center;
     text-align: center;
     color: white;
-    margin: 20px;
-    transition: .5s;
 }
+
 #collapseOne a:hover,
 .collapse-link a:hover,
 #collapseTwo a:hover {
     letter-spacing: 0;
+    color: black;
 }
-
 
 .name,
 .name-artist,
@@ -255,7 +256,7 @@ h5 {
     .row-3 a:hover {
         letter-spacing: .2em;
     }
-    .headshot {
+     .headshot {
         margin: 20px auto;
     }
     .name,
