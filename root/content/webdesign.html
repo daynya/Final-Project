@@ -1,0 +1,96 @@
+<h2 class="name-designer">DAYNYA QUIGLEY | DESIGNER</h2>
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="full-size-design">
+                <a href="design/arzberger.html">
+                    <img src="design/img/arzberger-main.png" class="img-fluid" id="arz-lg-img" alt="Arzberger website screenshot">
+                    <img src="design/img/arzberger-main-crop.png" class="img-fluid" id="arz-md-img" alt="Arzberger website screenshot">
+                    <img src="design/img/arzberger-main-thumb.png" class="img-fluid" id="arz-sm-img" alt="Arzberger website screenshot">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="full-size-design">
+                <a href="design/bean.html">
+                    <img src="design/img/bean-crop-lg.png" class="img-fluid" id="bean-lg-img" alt="Bean website screenshot">
+                    <img src="design/img/bean-crop-md.png" class="img-fluid" id="bean-md-img" alt="Bean website screenshot">
+                    <img src="design/img/bean-thumb.png" class="img-fluid" id="bean-sm-img" alt="Bean website screenshot">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="full-size-design">
+                <a href="design/daynyacom.html">
+                    <img src="design/img/daynyacom1.5.19-lg.png" class="img-fluid" id="daynyacom-lg-img" alt="Daynya.com website screenshot">
+                    <img src="design/img/daynyacom1.5.19-md.png" class="img-fluid" id="daynyacom-md-img" alt="Daynya.com website screenshot">
+                    <img src="design/img/daynyacom1.5.19-thumb.png" class="img-fluid" id="daynyacom-sm-img" alt="Daynya.com website screenshot">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="full-size-design">
+                <a href="design/say.html">
+                    <img src="design/img/SAYyoga6.1.19-lg.png" class="img-fluid" id="say-lg-img" alt="Strong Ass Yoga website screenshot">
+                    <img src="design/img/SAYyoga6.1.19-md.png" class="img-fluid" id="say-md-img" alt="Strong Ass Yoga website screenshot">
+                    <img src="design/img/SAYyoga6.1.19-thumb.png" class="img-fluid" id="say-sm-img" alt="Strong Ass Yoga website screenshot">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function(){
+        $(window).resize(function(){
+            if ($(window).width() <= 768) {
+                $("#arz-sm-img").show();
+                $("#arz-md-img").hide();
+                $("#arz-lg-img").hide();
+                $("#bean-sm-img").show();
+                $("#bean-md-img").hide();
+                $("#bean-lg-img").hide();
+                $("#daynyacom-sm-img").show();
+                $("#daynyacom-md-img").hide();
+                $("#daynyacom-lg-img").hide();
+                $("#say-sm-img").show();
+                $("#say-md-img").hide();
+                $("#say-lg-img").hide();
+            } else if ($(window).width() >= 769 && $(window).width() <= 990) {
+                $("#arz-sm-img").hide();
+                $("#arz-md-img").show();
+                $("#arz-lg-img").hide();
+                $("#bean-sm-img").hide();
+                $("#bean-md-img").show();
+                $("#bean-lg-img").hide();
+                $("#daynyacom-sm-img").hide();
+                $("#daynyacom-md-img").show();
+                $("#daynyacom-lg-img").hide();
+                $("#say-sm-img").hide();
+                $("#say-md-img").show();
+                $("#say-lg-img").hide();
+            } else {
+                $("#arz-sm-img").hide();
+                $("#arz-md-img").hide();
+                $("#arz-lg-img").show();
+                $("#bean-sm-img").hide();
+                $("#bean-md-img").hide();
+                $("#bean-lg-img").show();
+                $("#daynyacom-sm-img").hide();
+                $("#daynyacom-md-img").hide();
+                $("#daynyacom-lg-img").show();
+                $("#say-sm-img").hide();
+                $("#say-md-img").hide();
+                $("#say-lg-img").show();
+            }
+        }).resize();
+    });
+</script>

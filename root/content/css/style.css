@@ -6,13 +6,19 @@
 
 html,
 p,
-h1, 
+h1,
+h3, 
 h4 {
     font-family: 'Playfair Display', serif;
 }
 
+h3,
 h4 {
     font-style: italic;
+}
+
+h3 {
+    margin-top: 40px;
 }
 
 h5 {
@@ -25,6 +31,17 @@ h5 {
     text-decoration: none;
     transition: .5s;
     color: black;
+}
+
+.link {
+    text-decoration: none;
+    transition: .5s;
+    color: #4ea7ad;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: #ad9144;
 }
 
 .about-link:hover {
@@ -95,6 +112,18 @@ h5 {
     text-align: center;
     margin-top: 20px;
     font-size: 1.3em;
+}
+
+.capture {
+    border: solid 1px black;
+    margin: 20px 0px;
+}
+
+.progress-painting {
+    max-height: 500px;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
 }
 
 .name {
