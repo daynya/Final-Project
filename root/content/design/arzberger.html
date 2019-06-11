@@ -9,10 +9,140 @@ nav:
     <h4>Development of online catalog</h4>
     <p>
         Arzberger has been handcrafting custom stationery for nearly 100 years. In an effort to modernize the interface through which they offer this product, 
-        I concepted, designed and built an online catalog showcasing the categories, products, and information needed to place orders. Ease of use was key on this, as 
-        the clientele varies widely in age, and many users are not computer savvy. The eventual goal with this project is developing an online ordering portal.
+        I concepted, designed and prototyped an online catalog showcasing the categories, products, and information needed to place orders. Ease of use was key on this, as 
+        the clientele varies widely in age, and many users are not computer savvy. The eventual goal is developing an online ordering portal.
+        I used <a href="signal.html" class="link">Signal</a> to assist with this project, as there are going to be many pages of similar content and this is an efficient solution.
     </p>
     <img src="img/arzberger-weddings.png" class="img-fluid design-main border" alt="Arzberger screenshot">
     <img src="img/arzberger-wedding-detail.png" class="img-fluid design-main border" alt="Arzberger screenshot">
+    <p>Here is a snippet of the HTML from this page, as well as the jQuery that I used. I wanted to have a function where upon
+      clicking an image, the item details would populate.
+    </p>
+    <pre class="pre-scrollable">
+      <code>
+        &lt;div class=&quot;col-lg-4 col-md-12 details-pricing&quot; id=&quot;detail-1&quot;&gt;
+        &lt;h5 class=&quot;item-info&quot;&gt;Item Info and Pricing&lt;/h5&gt;
+        &lt;hr&gt;
+        &lt;ul class=&quot;item-details&quot;&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;STOCK&lt;/li&gt;
+              &lt;p&gt;
+                #18 Ecru Card, 330# (E18C330)&lt;br&gt;
+                #18 Ecru Envelope (E18I)&lt;br&gt;
+                #19 Ecru Envelope (E19O)
+              &lt;/p&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;FONT&lt;/li&gt;
+              &lt;p&gt;Customer furnished calligraphy&lt;/p&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;ART&lt;/li&gt;
+              &lt;p&gt;Custom created monogram design&lt;/p&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;INK&lt;/li&gt;
+              &lt;p&gt;Black + Emboss&lt;/p&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;BEVEL&lt;/li&gt;
+              &lt;p&gt;Gold&lt;/p&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;LINER&lt;/li&gt;
+              &lt;p&gt;Gold Tissue&lt;/p&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;PRICE&lt;/li&gt;
+              &lt;p&gt;Eng-L, Lett/Foil-L  &lt;a href=&quot;img/Pricing-Book-2018-WO.pdf&quot; download=&quot;Wedding Album Pricing&quot;&gt;(Click for Price Chart)&lt;/a&gt;&lt;/p&gt;
+              &lt;p&gt;Price includes double envelopes as well as return address&lt;/p&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;NOTES&lt;/li&gt;
+              &lt;p&gt;
+                Shown Engraved&lt;br&gt;
+                330# not available Thermographed/Printed&lt;br&gt;
+                Embossed monogram incurs addtional charge&lt;br&gt;
+                Bevel incurs additional charge&lt;br&gt;
+                Custom options of ribbon, wax seal and artwork incur additional charges&lt;br&gt;
+                Available in White (W18C330, W18I, W19O)
+              &lt;/p&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt; 
+        &lt;div class=&quot;col-lg-4 col-md-12 details-pricing&quot; id=&quot;detail-2&quot;&gt;
+          &lt;h5 class=&quot;item-info&quot;&gt;Item Info and Pricing&lt;/h5&gt;
+          &lt;hr&gt;
+          &lt;ul class=&quot;item-details&quot;&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;STOCK&lt;/li&gt;
+              &lt;p&gt;
+                #18 White Card, 330# (W18C330)&lt;br&gt;
+                #18 White Envelope (W18I)&lt;br&gt;
+                #19 White Envelope (W19O)
+              &lt;/p&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;FONT&lt;/li&gt;
+              &lt;p&gt;Customer furnished calligraphy&lt;/p&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;ART&lt;/li&gt;
+              &lt;p&gt;Family Crest&lt;/p&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;INK&lt;/li&gt;
+              &lt;p&gt;Charcoal + Emboss&lt;/p&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;BEVEL&lt;/li&gt;
+              &lt;p&gt;Plain&lt;/p&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;LINER&lt;/li&gt;
+              &lt;p&gt;Birch Tissue&lt;/p&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;PRICE&lt;/li&gt;
+              &lt;p&gt;Eng-L, Lett/Foil-L  &lt;a href=&quot;img/Pricing-Book-2018-WO.pdf&quot; download=&quot;Wedding Album Pricing&quot;&gt;(Click for Price Chart)&lt;/a&gt;&lt;/p&gt;
+              &lt;p&gt;Price includes double envelopes as well as return address&lt;/p&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;NOTES&lt;/li&gt;
+              &lt;p&gt;
+                Shown Engraved&lt;br&gt;
+                330# not available Thermographed/Printed&lt;br&gt;
+                Embossed Crest incurs additional charge&lt;br&gt;
+                Bevel incurs additional charge&lt;br&gt;
+                Available in Ecru (E18C330, E18I, E19O)
+              &lt;/p&gt;
+          &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-lg-4 col-md-12 details-pricing&quot; id=&quot;detail-3&quot;&gt;
+        &lt;h5 class=&quot;item-info&quot;&gt;Item Info and Pricing&lt;/h5&gt;
+        &lt;hr&gt;
+        &lt;ul class=&quot;item-details&quot;&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;STOCK&lt;/li&gt;
+              &lt;p&gt;
+                #18 Ecru Card, 330# (E18C330)&lt;br&gt;
+                #18 Ecru Envelope (E18I)&lt;br&gt;
+                #19 Ecru Envelope (E19O)
+              &lt;/p&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;FONT&lt;/li&gt;
+              &lt;p&gt;Bickham, Swash&lt;/p&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;ART&lt;/li&gt;
+              &lt;p&gt;Custom created monogram design&lt;/p&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;INK&lt;/li&gt;
+              &lt;p&gt;Black + Gold&lt;/p&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;BEVEL&lt;/li&gt;
+              &lt;p&gt;Gold&lt;/p&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;LINER&lt;/li&gt;
+              &lt;p&gt;Gold Leaf Tissue&lt;/p&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;PRICE&lt;/li&gt;
+              &lt;p&gt;Eng-L, Lett/Foil-L  &lt;a href=&quot;img/Pricing-Book-2018-WO.pdf&quot; download=&quot;Wedding Album Pricing&quot;&gt;(Click for Price Chart)&lt;/a&gt;&lt;/p&gt;
+              &lt;p&gt;Price includes double envelopes as well as return address&lt;/p&gt;
+            &lt;li class=&quot;detail-heading&quot;&gt;NOTES&lt;/li&gt;
+              &lt;p&gt;
+                Shown Engraved&lt;br&gt;
+                330# not available Thermographed/Printed&lt;br&gt;
+                Second color monogram incurs addtional charge&lt;br&gt;
+                Bevel incurs additional charge&lt;br&gt;
+                Available in White (W18C330, W18I, W19O)
+              &lt;/p&gt;
+          &lt;/ul&gt;
+      &lt;/div&gt;      
+        $(document).ready(function(){
+            $("#detail-2").hide();
+            $("#detail-3").hide();
+            $("#thumbnail-1").click(function(){
+                $("#main-image").attr("src", "img/smith18.jpg");
+                $("#detail-1").show();
+                $("#detail-2").hide();
+                $("#detail-3").hide();
+            });
+            $("#thumbnail-2").click(function(){
+                $("#main-image").attr("src", "img/mcguire.jpg");
+                $("#detail-1").hide();
+                $("#detail-2").show();
+                $("#detail-3").hide();
+            });
+            $("#thumbnail-3").click(function(){
+                $("#main-image").attr("src", "img/campbell18.jpg");
+                $("#detail-1").hide();
+                $("#detail-2").hide();
+                $("#detail-3").show();
+            });
+        });
+      </code>
+    </pre>
     <img src="img/arzberger-wedding-detail-3.png" class="img-fluid design-main border" alt="Arzberger screenshot">
 </div>

@@ -111,32 +111,14 @@
     $(document).ready(function(){
         $(window).resize(function(){
             if ($(window).width() <= 768) {
-                $("#arz-sm-img").show();
-                $("#arz-md-img").hide();
-                $("#arz-lg-img").hide();
-                $("#bean-sm-img").show();
-                $("#bean-md-img").hide();
-                $("#bean-lg-img").hide();
                 $("#ysc-sm-img").show();
                 $("#ysc-md-img").hide();
                 $("#ysc-lg-img").hide();
             } else if ($(window).width() >= 769 && $(window).width() <= 990) {
-                $("#arz-sm-img").hide();
-                $("#arz-md-img").show();
-                $("#arz-lg-img").hide();
-                $("#bean-sm-img").hide();
-                $("#bean-md-img").show();
-                $("#bean-lg-img").hide();
                 $("#ysc-sm-img").hide();
                 $("#ysc-md-img").show();
                 $("#ysc-lg-img").hide();
             } else {
-                $("#arz-sm-img").hide();
-                $("#arz-md-img").hide();
-                $("#arz-lg-img").show();
-                $("#bean-sm-img").hide();
-                $("#bean-md-img").hide();
-                $("#bean-lg-img").show();
                 $("#ysc-sm-img").hide();
                 $("#ysc-md-img").hide();
                 $("#ysc-lg-img").show();
