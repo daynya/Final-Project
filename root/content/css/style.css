@@ -8,12 +8,15 @@ html,
 p,
 h1,
 h3, 
-h4 {
+h4,
+h6,
+ul {
     font-family: 'Playfair Display', serif;
 }
 
 h3,
-h4 {
+h4,
+h6 {
     font-style: italic;
 }
 
@@ -194,6 +197,10 @@ h5 {
 
 .border {
     border: 1px solid black;
+}
+
+ul {
+    list-style: none;
 }
 
 /* Nav */

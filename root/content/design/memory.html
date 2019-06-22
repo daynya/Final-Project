@@ -1,0 +1,103 @@
+---
+nav:
+  next: arzberger.html
+---
+
+<div class="container">
+    <h1 class="art-title">Memory Game</h1>
+    <img src="img/memory-main.png" class="img-fluid design-main border" alt="Arzberger screenshot">
+    <h4>Building of JavaScript Memory Game</h4>
+    <p>
+        Using HTML, CSS and JavaScript, I built a two player memory game. The game rules follow:
+    </p>
+    <ul>
+        <li>Each player takes a turn and turns over two cards, one at a time.</li>
+        <li>If the cards are not a match, the get turned back over.</li>
+        <li>If the cards are a match, they stay flipped.</li>
+        <li>If you get a match, you get another turn.</li>
+        <li>The player with the most matches wins.</li>
+    </ul>
+    <img src="img/memory-match.png" class="img-fluid design-main border" alt="Arzberger screenshot">
+    <h4>How I built it</h4>
+    <p>
+        I started with a standard HTML setup. I included a scoreboard and a gameboard.
+        I created a grid of divs which serve as the cards. Each card has an image on the back,
+        which is the side you see at the game start. The opposite side of each card has an icon.
+        There are currently 16 cards total, and 8 unique icons for 8 matches. That's about it for 
+        the HTML!
+    </p>
+    
+    <h4>The Challenges</h4>
+    <p>
+        This game serves up a handful of challenges, and here is how I tackled some of those.
+    </p>
+    <h6>Deal the cards</h6>
+    <p>
+        To shuffle the cards, I created a function that generates a random number between 
+        1-16, and then that number gets applied to the "order" style on the card divs to 
+        shuffle the order in their array. This is called upon the start of a new game.
+    </p>
+    <h6>Flip the cards over when clicked</h6>
+    <p>
+        When a card div is clicked, a function in JavaScript adds a "flip" class to it.
+        Each card div has both an image (shared with all other card backs), and an icon.
+        The icon is not visible upon loading the game, but when the "flip" class is added,
+        it will add a rotation animation, and display the icon on the underside of the card.
+        There is also a function built in that prevents further cards from being clicked 
+        during the turn.
+    </p>
+    <h6>Remember where the cards are</h6>
+    <P>
+        During the game, the array holds the newly shuffled "order". When the game has been won,
+        or the New Game button is clicked, the cards are re-shuffled.
+    </P>
+    <h6>Test for matched cards</h6>
+    <p>
+        When the flip class is added to two cards, there is a function that tests to see 
+        if the dataset on each matches the other. If it does, then the paired match turns
+        the color of the player who it is awarded to. Those cards then get disabled from further
+        game play, and the score is updated. If the cards are not a match, the "flip" class
+        is removed from them, and they are turned back over to remain in play.
+    </p>
+    <h6>Alternate turns</h6>
+    <p>
+        In my HTML file, I included a div for each player. One of the player divs has a class
+        of "active" added by default. In my JavaScript, if the player has made a match, they
+        get another turn. This is done by leaving them in "active" status. If they do not get a 
+        match, the active status toggles to the other player. The active player is highlighted
+        on the scoreboard at top of the game.
+    </p>
+    <h6>Calculate a winner</h6>
+    <p>
+        When all 16 cards have been matched, a function is run to calculate the winner. 
+        Whichever player has a greater number of matches, wins. The scoreboard then gets updated
+        displaying the winner, or letting you know it's a tie. This flashes for a second, and 
+        then the game is reset.
+    </p>
+    <h6>Start a new game</h6>
+    <p>
+        When a player has won, or the New Game button has been clicked, the gameboard is reset.
+        The scores are reset, and the added classes are removed from all cards.
+    </p>
+    <h6>Timeouts</h6>
+    <p>
+        In order to make the game play more smooth, I did have to add a timer to a lot of the
+        functions included. I felt this was one of the fun challenges. Adding these in
+        definitely improved the user experience of the game. Many were issues that I never
+        anticpated having until I ran into them during game play. Some of the timers added are: 
+        <ul>
+            <li>Displaying the cards for a second before flipping them back over if they aren't a match.</li>
+            <li>Allow the cards to finish flipping back over before changing players.</li>
+            <li>Allow the second card to diplay before flipping back over.</li>
+            <li>Allow the scoreboard to update before changing the display around the active player.</li>
+            <li>Allow the cards to finish shuffling before being clickable.</li>
+            <li>Allow the card to display the icon when clicked before assigning it a color if it's a match.</li>
+            <li>Allow the card to finish updating match color before showing the winner.</li>
+        </ul>
+    </p>
+    <p>
+        This was a fun exercise for me. I ran into some roadblocks that were a little
+        tricky, but it gave me a good opportunity to learn some new tricks.
+    </p>
+    <h3><a href="memory-game/memory-game.html" class="link">Click here to play the game!</a></h3>
+</div>
