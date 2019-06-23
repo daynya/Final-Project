@@ -199,8 +199,9 @@ h5 {
     border: 1px solid black;
 }
 
-ul {
-    list-style: none;
+.code {
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    color: red;
 }
 
 /* Nav */
@@ -238,6 +239,7 @@ ul {
     .container-fluid {
         margin: 0;
     }
+
     .row-1 h1, 
     .row-2 h1,
     .row-3 h1 {
@@ -247,38 +249,65 @@ ul {
         text-align: center;
         padding: 80px 0px;
     }
-    .row-1:hover {
+
+    .row-1:active {
         background-color: white;
     }
-    .row-1 h1:hover {
+
+    .row-1 h1:active {
         color: #f83ccf;
     }
-    .row-2:hover {
+
+    .row-2:active {
         background-color: white;
     }
-    .row-2 h1:hover {
+
+    .row-2 h1:active {
         color: #4ea7ad;
     }
-    .row-3:hover {
+    
+    .row-3:active {
         background-color: white;
     }
-    .row-3 h1:hover {
+
+    .row-3 h1:active {
         color: #ad9144
     }
+
+    #collapseOne,
+    #collapseTwo {
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid white;
+    }
+    
+    .collapse-link {
+        font-family: 'Playfair Display', serif;
+        font-size: 1em;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+    
     .headshot {
         margin: 20px auto;
     }
+
     .name,
     .name-artist,
     .name-designer {
         font-size: 1.1em;
     }
+
 }
 
 @media (min-width: 768px) {
     .container-fluid {
         margin: 0;
     }
+
     .row-1 h1, 
     .row-2 h1,
     .row-3 h1 {
@@ -287,22 +316,27 @@ ul {
         text-align: center;
         padding: 120px 0px;
     }
+
     .row-1 a:hover,
     .row-2 a:hover,
     .row-3 a:hover {
         letter-spacing: .2em;
     }
+
      .headshot {
         margin: 20px auto;
     }
+
     .name,
     .name-artist,
     .name-designer {
         font-size: 2em;
     }
+
     .full-size-design {
         max-height: 200px;
     }
+
 }
 
 @media (min-width: 990px) {
@@ -312,17 +346,21 @@ ul {
         font-size: 3.5em;
         padding: 120px 0px;
     }
+
     .row-1 a:hover,
     .row-2 a:hover,
     .row-3 a:hover {
         letter-spacing: .2em;
     }
+
     .headshot {
         margin: 20px auto;
     }
+
     .full-size-design {
         max-height: 300px;
     }
+
 }
 
 @media (min-width: 1100px) { 
@@ -356,11 +394,13 @@ ul {
         font-size: 5em;
         padding: 100px 0px;
     }
+
     .row-1 a:hover,
     .row-2 a:hover,
     .row-3 a:hover {
         letter-spacing: .5em;
     }
+
     .name,
     .name-artist,
     .name-designer {
@@ -368,9 +408,11 @@ ul {
         letter-spacing: .5em;
         padding: 100px 80px;
     }
+
     .headshot {
         margin: auto;
     }
+
 }
 
 @media (min-width: 1600px) { 
@@ -380,11 +422,13 @@ ul {
         font-size: 6em;
         padding: 95px 0px;
     }
+
     .row-1 a:hover,
     .row-2 a:hover,
     .row-3 a:hover {
         letter-spacing: .6em;
     }
+
     .name,
     .name-artist,
     .name-designer {
@@ -392,9 +436,11 @@ ul {
         letter-spacing: .6em;
         padding: 100px 80px;
     }
+
     .headshot {
         margin: auto;
     }
+
 }
 
 @media (min-width: 1800px) { 
@@ -404,11 +450,13 @@ ul {
         font-size: 7em;
         padding: 95px 0px;
     }
+
     .row-1 a:hover,
     .row-2 a:hover,
     .row-3 a:hover {
         letter-spacing: .7em;
     }
+
     .name,
     .name-artist,
     .name-designer {
@@ -416,8 +464,9 @@ ul {
         letter-spacing: .8em;
         padding: 100px 80px;
     }
+
     .headshot {
         margin: auto;
     }
-}
 
+}
