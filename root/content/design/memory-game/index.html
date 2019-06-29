@@ -1,0 +1,110 @@
+---
+template: plain
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ee5f2ca734.js"></script>
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <div class="col sidebar">
+      <h1 class="game-title">MEMORY GAME</h1>
+    </div>
+    <div class="container-fluid">
+      <div id="scoreboard" class="row player-panel">
+        <div class="col player-0-panel active">
+          <div class="player-name" id="player-0">BLUE PLAYER</div>
+          <div class="player-score" id="score-0">0</div>
+        </div>
+        <div class="col">
+          <button id="new-game">NEW GAME</button>
+        </div>
+        <div class="col player-1-panel">
+          <div class="player-name" id="player-1">RED PLAYER</div>
+          <div class="player-score" id="score-1">0</div>
+        </div>
+      </div>
+      <div id="winner-alert" class="row player-panel">
+        <div class="col">
+          <div class="winner"></div>
+        </div>
+      </div>
+      <div class="row game-board">
+        <div class="card" data-icon="cat">
+          <i class="fas fa-cat fa-5x card-front"></i>
+          <img class="card-back" src="img/question.png" alt="question mark">
+        </div>
+        <div class="card" data-icon="cat">
+          <i class="fas fa-cat fa-5x card-front"></i>
+          <img class="card-back" src="img/question.png" alt="question mark">
+        </div>
+        <div class="card" data-icon="glasses">
+          <i class="fas fa-glasses fa-5x card-front"></i>
+          <img class="card-back" src="img/question.png" alt="question mark">
+        </div>
+        <div class="card" data-icon="glasses">
+          <i class="fas fa-glasses fa-5x card-front"></i>
+          <img class="card-back" src="img/question.png" alt="question mark">
+        </div>
+        <div class="card" data-icon="cloud-moon">
+          <i class="fas fa-cloud-moon fa-5x card-front"></i>
+          <img class="card-back" src="img/question.png" alt="question mark">
+        </div>
+        <div class="card" data-icon="cloud-moon">
+          <i class="fas fa-cloud-moon fa-5x card-front"></i>
+          <img class="card-back" src="img/question.png" alt="question mark">
+        </div>
+        <div class="card" data-icon="lightbulb">
+          <i class="fas fa-lightbulb fa-5x card-front"></i>
+          <img class="card-back" src="img/question.png" alt="question mark">
+        </div>
+        <div class="card" data-icon="lightbulb">
+          <i class="fas fa-lightbulb fa-5x card-front"></i>
+          <img class="card-back" src="img/question.png" alt="question mark">
+        </div>
+        <div class="card" data-icon="leaf">
+          <i class="fas fa-leaf fa-5x card-front"></i>
+          <img class="card-back" src="img/question.png" alt="question mark">
+        </div>
+        <div class="card" data-icon="leaf">
+          <i class="fas fa-leaf fa-5x card-front"></i>
+          <img class="card-back" src="img/question.png" alt="question mark">
+        </div>
+        <div class="card" data-icon="eye">
+          <i class="fas fa-eye fa-5x card-front"></i>
+          <img class="card-back" src="img/question.png" alt="question mark">
+        </div>
+        <div class="card" data-icon="eye">
+          <i class="fas fa-eye fa-5x card-front"></i>
+          <img class="card-back" src="img/question.png" alt="question mark">
+        </div>
+        <div class="card" data-icon="hand-peace">
+          <i class="fas fa-hand-peace fa-5x card-front"></i>
+          <img class="card-back" src="img/question.png" alt="question mark">
+        </div>
+        <div class="card" data-icon="hand-peace">
+          <i class="fas fa-hand-peace fa-5x card-front"></i>
+          <img class="card-back" src="img/question.png" alt="question mark">
+        </div>
+        <div class="card" data-icon="guitar">
+          <i class="fas fa-guitar fa-5x card-front"></i>
+          <img class="card-back" src="img/question.png" alt="question mark">
+        </div>
+        <div class="card" data-icon="guitar">
+          <i class="fas fa-guitar fa-5x card-front"></i>
+          <img class="card-back" src="img/question.png" alt="question mark">
+        </div>
+      </div>
+      <h2 class="exit">
+        <a href="../memory.html" class="exit">EXIT GAME</a>
+      </h2>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
