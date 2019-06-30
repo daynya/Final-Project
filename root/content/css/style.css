@@ -1,4 +1,5 @@
 /* Reset */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,9 +23,6 @@ time, mark, audio, video {
 
 /* General */
 
-.container-fluid {
-    margin: 0px 20px;
-}
 
 html,
 p,
@@ -34,10 +32,6 @@ h4,
 h6,
 ul {
     font-family: 'Playfair Display', serif;
-}
-
-h1 {
-    margin-top: -50px;
 }
 
 h3,
@@ -78,161 +72,6 @@ h5 {
     text-decoration: none;
 }
 
-.row-1 h1, 
-.row-2 h1,
-.row-3 h1 {
-    font-family: 'Playfair Display', serif;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    transition: .5s;
-}
-
-.row-1 a:hover,
-.row-2 a:hover,
-.row-3 a:hover {
-    text-decoration: none;
-}
-
-.row-1 {
-    background-color: #f83ccf;
-    transition: .5s;
-}
-
-.row-2 {
-    background-color: #4ea7ad;
-    transition: .5s;
-}
-
-.row-3 {
-    background-color: #ad9144;
-    transition: .5s;
-}
-
-#collapseOne,
-#collapseTwo {
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    margin: 30px;
-    border: 2px solid white;
-}
-
-.collapse-link {
-    font-family: 'Playfair Display', serif;
-    font-size: 2em;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-
-#collapseOne a:hover,
-.collapse-link a:hover,
-#collapseTwo a:hover {
-    letter-spacing: 0;
-    color: black;
-}
-
-.name,
-.name-artist,
-.name-designer {
-    font-family: 'Playfair Display', serif;
-    letter-spacing: .15em;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1.3em;
-}
-
-.capture {
-    border: solid 1px black;
-    margin: 20px 0px;
-}
-
-.progress-painting {
-    max-height: 500px;
-    display: block;
-    margin: auto;
-    margin-bottom: 50px;
-}
-
-.name {
-    color: #f83ccf;
-}
-
-.name-artist {
-    color: #ad9144;
-}
-
-.name-designer {
-    color: #4ea7ad;
-}
-
-.headshot {
-    display: block;
-    margin: auto;
- }
-
-.thumbnail,
-.thumbnail-design {
-    margin: 20px 0px;
-}
-
-.thumbnail-design, 
-.full-size-design {
-    border: 1px solid rgb(146, 146, 146);
-}
-
-.thumbnail img,
-.thumbnail-design img {
-    width: 100%;
-    transition: .5s;
-}
-
-.full-size,
-.full-size-design {
-    overflow: hidden;
-    margin: 20px 0px;
-}
-
-.full-size {
-    max-height: 350px;
-}
-
-.full-size img,
-.full-size-design img {
-    width: 100%;
-    transition: .5s;
-}
-
-.thumbnail img:hover,
-.full-size img:hover,
-.thumbnail-design img:hover,
-.full-size-design img:hover {
-    opacity: .6
-}
-
-.art-title {
-    margin: 40px 0px;
-    font-style: italic;
-}
-
-.art-main,
-.design-main {
-    margin-bottom: 1rem;
-}
-
-.border {
-    border: 1px solid black;
-}
-
-.code {
-    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-    color: red;
-}
-
-.date {
-    margin-top: 30px;
-}
 
 /* Nav */
 
@@ -273,279 +112,24 @@ h5 {
     display:block;
 }
 
-.prev-next {
-    margin-bottom: 20px;
-}
-
-.next-link,
-.prev-link {
-    font-family: 'Playfair Display', serif;
-    letter-spacing: .1em;
-    transition: .5s;
-    color: #888;
-    text-decoration: none;
-    margin: 20px;
-}
-
-.next-link:hover,
-.prev-link:hover {
-    color: #4ea7ad;
-    text-decoration: none;
-}
-
 /* Media Queries */
 
-@media (max-width: 767.98px) { 
-    .nav-link a:not(:first-child) {
-        display: none;
-    }
-    
-    .nav-link a:icon {
-        float: right;
-        display: block;
-    }
+@media (max-width: 767.98px) {} 
 
-    .topnav.responsive {
-        position: relative;
-    }
 
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
+@media (min-width: 768px) {}
 
-    .container-fluid {
-        margin: 0;
-    }
 
-    .row-1 h1, 
-    .row-2 h1,
-    .row-3 h1 {
-        justify-content: center;
-        font-size: 1.5em;
-        font-weight: bold;
-        text-align: center;
-        padding: 80px 0px;
-    }
+@media (min-width: 990px) {}
+ 
 
-    .row-1:active {
-        background-color: white;
-    }
+@media (min-width: 1100px) {}
+ 
 
-    .row-1 h1:active {
-        color: #f83ccf;
-    }
+@media (min-width: 1300px) {}
 
-    .row-2:active {
-        background-color: white;
-    }
 
-    .row-2 h1:active {
-        color: #4ea7ad;
-    }
-    
-    .row-3:active {
-        background-color: white;
-    }
+@media (min-width: 1600px) {}
 
-    .row-3 h1:active {
-        color: #ad9144
-    }
 
-    #collapseOne,
-    #collapseTwo {
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    margin: 10px;
-    border: 2px solid white;
-    }
-    
-    .collapse-link {
-        font-family: 'Playfair Display', serif;
-        font-size: 1em;
-        justify-content: center;
-        text-align: center;
-        color: white;
-    }
-    
-    .headshot {
-        margin: 20px auto;
-    }
-
-    .name,
-    .name-artist,
-    .name-designer {
-        font-size: 1.1em;
-    }
-
-}
-
-@media (min-width: 768px) {
-    .container-fluid {
-        margin: 0;
-    }
-
-    .row-1 h1, 
-    .row-2 h1,
-    .row-3 h1 {
-        justify-content: center;
-        font-size: 3.3em;
-        text-align: center;
-        padding: 120px 0px;
-    }
-
-    .row-1 a:hover,
-    .row-2 a:hover,
-    .row-3 a:hover {
-        letter-spacing: .2em;
-    }
-
-     .headshot {
-        margin: 20px auto;
-    }
-
-    .name,
-    .name-artist,
-    .name-designer {
-        font-size: 2em;
-    }
-
-    .full-size-design {
-        max-height: 200px;
-    }
-
-}
-
-@media (min-width: 990px) {
-    .row-1 h1, 
-    .row-2 h1,
-    .row-3 h1 {
-        font-size: 3.5em;
-        padding: 120px 0px;
-    }
-
-    .row-1 a:hover,
-    .row-2 a:hover,
-    .row-3 a:hover {
-        letter-spacing: .2em;
-    }
-
-    .headshot {
-        margin: 20px auto;
-    }
-
-    .full-size-design {
-        max-height: 300px;
-    }
-
-}
-
-@media (min-width: 1100px) { 
-    .row-1 h1, 
-    .row-2 h1,
-    .row-3 h1 {
-        font-size: 4em;
-        padding: 100px 0px;
-    }
-    .row-1 a:hover,
-    .row-2 a:hover,
-    .row-3 a:hover {
-        letter-spacing: .33em;
-    }
-    .name,
-    .name-artist,
-    .name-designer {
-        font-size: 2.5em;
-        letter-spacing: .3em;
-        padding: 100px 80px;
-    }
-    .headshot {
-        margin: auto;
-    }
-}
-
-@media (min-width: 1300px) { 
-    .row-1 h1, 
-    .row-2 h1,
-    .row-3 h1 {
-        font-size: 5em;
-        padding: 100px 0px;
-    }
-
-    .row-1 a:hover,
-    .row-2 a:hover,
-    .row-3 a:hover {
-        letter-spacing: .5em;
-    }
-
-    .name,
-    .name-artist,
-    .name-designer {
-        font-size: 2.5em;
-        letter-spacing: .5em;
-        padding: 100px 80px;
-    }
-
-    .headshot {
-        margin: auto;
-    }
-
-}
-
-@media (min-width: 1600px) { 
-    .row-1 h1, 
-    .row-2 h1,
-    .row-3 h1 {
-        font-size: 6em;
-        padding: 95px 0px;
-    }
-
-    .row-1 a:hover,
-    .row-2 a:hover,
-    .row-3 a:hover {
-        letter-spacing: .6em;
-    }
-
-    .name,
-    .name-artist,
-    .name-designer {
-        font-size: 3em;
-        letter-spacing: .6em;
-        padding: 100px 80px;
-    }
-
-    .headshot {
-        margin: auto;
-    }
-
-}
-
-@media (min-width: 1800px) { 
-    .row-1 h1, 
-    .row-2 h1,
-    .row-3 h1 {
-        font-size: 7em;
-        padding: 95px 0px;
-    }
-
-    .row-1 a:hover,
-    .row-2 a:hover,
-    .row-3 a:hover {
-        letter-spacing: .7em;
-    }
-
-    .name,
-    .name-artist,
-    .name-designer {
-        font-size: 3em;
-        letter-spacing: .8em;
-        padding: 100px 80px;
-    }
-
-    .headshot {
-        margin: auto;
-    }
-
-}
+@media (min-width: 1800px) {}
