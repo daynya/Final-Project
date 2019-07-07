@@ -1,12 +1,39 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand);
+/* GENERAL */
 
 html,
 body {
     height: 100%;
-    background-color: #333;
     font-family: 'Quicksand', sans-serif;
-    color: white;
 }
+
+h1, 
+h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+
+/* GRID */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 100px 40px;
+}
+
+.left-content {
+    grid-column: span 8;
+}
+
+.right-content {
+    grid-column: span 4;
+}
+
+.news-feed {
+    grid-column: span 12;
+}
+
+
+/* NAV */
 
 .b-a {
     transition: all .25s;
@@ -16,11 +43,11 @@ body {
     height: 6px;
     width: 30px;
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, .95); 
+    background-color: #c8f542; 
 }
 
 .menu-collapsed {
-    transition: all .4s;
+    transition: all .25s;
     position: fixed;
     top: 10px;
     left: 9px;
@@ -56,7 +83,7 @@ body {
 }
 
 .menu-expanded {
-    transition: all .4s;
+    transition: all .25s;
     text-align: center;
     line-height: 15.5vh;
     height: 100%;
