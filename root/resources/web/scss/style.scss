@@ -16,20 +16,23 @@ h2 {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 40px 100px 40px;
 }
 
 .left-content {
     grid-column: span 8;
+    border: 1px solid red;
 }
 
 .right-content {
     grid-column: span 4;
+    border: 1px solid blue;
 }
 
 .news-feed {
     grid-column: span 12;
+    border: 1px solid black;
 }
 
 
