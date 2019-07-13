@@ -14,31 +14,36 @@ h2 {
 
 /* GRID */
 
-.header {
+header {
     border: 1px solid green;
-    width: 100%;
+    grid-column: 1 / 13;
 }
 
-.left-content {
+main {
     border: 1px solid red;
-
+    grid-column: 1 / 8;
 }
 
-.right-content {
+aside {
     border: 1px solid blue;
-
+    grid-column: 8 / 13;
 }
 
 .news-feed {
     border: 1px solid black;
-
+    grid-column: 1 / 13;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 100px 500px 300px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(100px, auto);
+}
 
+.grid-container, 
+.news-feed {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 
@@ -74,8 +79,8 @@ h2 {
 .bar {
     @extend .b-a;
     position: fixed;
-    left: 12px;
-    top: 24px;
+    left: 30px;
+    top: 40px;
     &:before {
         @extend .b-a;
         top: -8px;
@@ -139,3 +144,25 @@ h2 {
         }
     }
 }
+
+/* OTHER */
+
+.headshot {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.title {
+    margin-top: 15rem;
+    margin-left: 2rem;
+    line-height: 1rem;
+}
+
+.intro {
+    margin-left: 2rem; 
+    margin-right: 2rem;
+
+}
+
