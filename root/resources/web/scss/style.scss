@@ -15,33 +15,30 @@ h2 {
 /* GRID */
 
 .header {
-    grid-area: header;
     border: 1px solid green;
+    width: 100%;
 }
 
 .left-content {
-    grid-area: main;
     border: 1px solid red;
+
 }
 
 .right-content {
-    grid-area: sidebar;
     border: 1px solid blue;
+
 }
 
 .news-feed {
-    grid-area: footer;
     border: 1px solid black;
+
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 300px 100px 200px;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "header header header"
-    "main main sidebar"
-    "footer footer footer";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px 500px 300px;
+
 }
 
 
