@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i"/> 
-        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">         
         <link rel="stylesheet" href="{{ .Obj.Rel "css/reset.css" }}">
         <link rel="stylesheet" href="{{ .Obj.Rel "css/style.css" }}">
     </head>
@@ -56,13 +56,6 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="{{ .Obj.Rel "scripts/site.js" }}"></script>
-
-        <h1>
-            {{.Obj.Data.name}}
-        </h1>
-        <h1>
-            {{.Obj.Data.stuff.a}}
-        </h1>
 
         {{.Obj.Markup}}
        
