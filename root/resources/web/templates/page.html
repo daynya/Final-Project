@@ -19,44 +19,43 @@
 
     <body>
         <div class="container">
-
-        <div class="menu-collapsed">
-            <div class="bar"></div>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="{{ .Obj.Rel "index.html" }}">HOME</a>
-                        </li>
-                        <li>
-                            <a href="{{ .Obj.Rel "about.html" }}">ABOUT</a>
-                        </li>
-                        <li>
-                            <a href="{{ .Obj.Rel "news.html" }}">NEWS</a>
-                        </li>
-                        <li>
-                            <a href="{{ .Obj.Rel "webdesign.html" }}">WEB DEVELOPMENT</a>
-                        </li>
-                        <li>
-                            <a href="{{ .Obj.Rel "design.html" }}">GRAPHIC DESIGN</a>
-                        </li>
-                        <li>
-                            <a  href="{{ .Obj.Rel "art.html" }}">ART</a>
-                        </li>
-                    </ul>
-                </nav>
+            <div class="menu-collapsed">
+                <div class="bar"></div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="{{ .Obj.Rel "index.html" }}">HOME</a>
+                            </li>
+                            <li>
+                                <a href="{{ .Obj.Rel "about.html" }}">ABOUT</a>
+                            </li>
+                            <li>
+                                <a href="{{ .Obj.Rel "news.html" }}">NEWS</a>
+                            </li>
+                            <li>
+                                <a href="{{ .Obj.Rel "webdesign.html" }}">WEB DEVELOPMENT</a>
+                            </li>
+                            <li>
+                                <a href="{{ .Obj.Rel "design.html" }}">GRAPHIC DESIGN</a>
+                            </li>
+                            <li>
+                                <a  href="{{ .Obj.Rel "art.html" }}">ART</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
-            <div class="grid-container">
-                <header></header>
-                <main>
-                    {{.Obj.Data.main}}
-                </main>
-                <aside>
-                    {{.Obj.Data.aside}}
-                </aside>
-            </div>
+                <div class="grid-container">
+                    <header></header>
+                    <main>
+                        {{.Obj.Data.main}}
+                    </main>
+                    <aside>
+                        {{.Obj.Data.aside}}
+                    </aside>
+                </div>
 
-        {{.Obj.Markup}}
+            {{.Obj.Markup}}
 
         </div>
     
