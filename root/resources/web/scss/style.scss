@@ -3,7 +3,7 @@
 html,
 body {
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 
@@ -54,6 +54,11 @@ a:hover {
     background-size: 4px 50px;
 }
 
+.news-link {
+    text-decoration: none;
+    color: black;
+}
+
 /* GRID */
 
 header {
@@ -80,7 +85,6 @@ aside {
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .news-feed {
@@ -88,7 +92,7 @@ aside {
     grid-column: 1 / 13;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: minmax(50px, auto);
-    background-color: black;
+    background-color: #4d4d4d;
 }
 
 .news-item {
