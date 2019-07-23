@@ -9,7 +9,10 @@ body {
 
 h1, 
 h2,
-h3 {
+h3, 
+h4, 
+h5, 
+h6 {
     font-family: 'Playfair Display', serif;
 }
 
@@ -57,6 +60,13 @@ a:hover {
 .news-link {
     text-decoration: none;
     color: black;
+}
+
+.headshot {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 150px 50px;
 }
 
 /* GRID */
@@ -161,7 +171,7 @@ aside {
 .menu-expanded {
     transition: all .25s;
     text-align: center;
-    line-height: 15.5vh;
+    line-height: 19vh;
     height: 100%;
     width: 100%;
     border-radius: 0px;
@@ -206,3 +216,6 @@ aside {
         }
     }
 }
+
+/* MEDIA QUERIES */
+
