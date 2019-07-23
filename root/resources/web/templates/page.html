@@ -43,24 +43,24 @@
                 </div>
             </div>
                 <div class="grid-container">
-                    {{if .Obj.Data.header}}
+                    {{if index .Obj.Regions "header"}}
                         <header>
-                        {{.Obj.Data.header}}
+                        {{index .Obj.Regions "header"}}
                         </header>
                     {{end}}
                     <main>
                         {{.Obj.Markup}}
                     </main>
-                    {{if .Obj.Data.aside}}
+                    {{if index .Obj.Regions "aside"}}
                         <aside>
-                            {{.Obj.Data.aside}}
+                            {{index .Obj.Regions "aside"}}
                         </aside>
                     {{end}}
                 </div>
 
-            {{if .Obj.Data.footer}}
+            {{if index .Obj.Regions "footer"}}
                 <footer>
-                    {{.Obj.Data.footer}}
+                    {{index .Obj.Regions "footer"}}
                 </footer>
             {{end}}
 
