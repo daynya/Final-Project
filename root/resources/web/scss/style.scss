@@ -60,7 +60,7 @@ h3 {
         background-size: 4px 4px;
     color: #000;
     text-decoration: none;
-    transition: background-size .2s;
+    transition: background-size .5s;
 }
 
 a:hover {
@@ -77,6 +77,21 @@ a:hover {
     display: block;
     height: auto;
     margin: 150px 50px;
+}
+
+.find-me {
+    color: white;
+}
+
+.icon {
+    font-size: 5rem;
+    color: white;
+    margin: 2rem;
+    transition: .5s;
+}
+
+.icon:hover {
+    color: #c8f542;
 }
 
 /* GRID */
@@ -132,6 +147,12 @@ aside {
 footer {
     grid-column: 1 / 13;
     background-color: #4d4d4d;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* NAV */
