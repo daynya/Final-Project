@@ -78,14 +78,50 @@ a:hover {
 }
 
 .card-title {
-  margin-top: 30px;
+  margin: 30px auto;
+}
+
+#card-memory-image {
+  background: url(/img/memory.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+#card-arz-image {
+  background: url(/img/arz.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+#card-daynyacom-image {
+  background: url(/img/daynyacom.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+/* ABOUT */
+.top-greeting {
+  margin-top: 10rem;
+  margin-bottom: 1rem;
 }
 
 .headshot {
   max-width: 100%;
   display: block;
   height: auto;
-  margin: 150px 50px;
+  margin: 15rem 5rem;
 }
 
 .find-me {
@@ -101,23 +137,6 @@ a:hover {
 
 .icon:hover {
   color: #c8f542;
-}
-
-.thumbnail {
-  max-width: 150px;
-  height: auto;
-  display: block;
-  margin: auto;
-}
-
-#card-arz-image {
-  background: url(/img/arzberger-thumb.png) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: 400px 400px;
-  width: 300px;
-  height: 300px;
 }
 
 /* GRID */
@@ -161,6 +180,12 @@ aside {
   background-color: #dadada;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.6), 0 8px 22px 0 rgba(0, 0, 0, 0.6);
   margin: 2.5rem;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.8), 0 10px 24px 0 rgba(0, 0, 0, 0.8);
 }
 
 footer {
@@ -230,7 +255,7 @@ footer {
 .menu-expanded {
   transition: all 0.25s;
   text-align: center;
-  line-height: 19vh;
+  line-height: 24vh;
   height: 100%;
   width: 100%;
   border-radius: 0px;
