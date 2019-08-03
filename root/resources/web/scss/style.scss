@@ -125,7 +125,21 @@ a:hover {
 /* PORTFOLIO */
 
 .project {
+    margin: 5% auto;
+    transition: .2s;
+}
 
+.project:hover {
+    transform: scale(1.02);
+}
+
+.project-title {
+    text-align: center;
+}
+
+.project-link {
+    text-decoration: none;
+    color: black;
 }
 
 @mixin project-img {
@@ -135,6 +149,7 @@ a:hover {
     background-size: cover;
     width: 100%;
     height: 300px;
+    border: 1px solid black;
 }
 
 #memory-project {
@@ -145,19 +160,16 @@ a:hover {
 #daynyacom-project {
     background: url(/img/daynyacom2014.png) no-repeat center center;
     @include project-img;
-
 }
 
 #arzberger-project {
     background: url(/img/arzberger-main.png) no-repeat center center;
     @include project-img;
-
 }
 
 #say-project {
     background: url(/img/say.png) no-repeat center center;
     @include project-img;
-
 }
 
 
