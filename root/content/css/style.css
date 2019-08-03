@@ -145,6 +145,10 @@ header {
 }
 
 main {
+  grid-column: 1/13;
+}
+
+section {
   grid-column: 1/8;
 }
 
