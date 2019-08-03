@@ -111,6 +111,52 @@ a:hover {
   height: 300px;
 }
 
+.page-title {
+  margin-top: 10%;
+  text-align: center;
+}
+
+/* PORTFOLIO */
+#memory-project {
+  background: url(/img/memory-main.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+#daynyacom-project {
+  background: url(/img/daynyacom2014.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+#arzberger-project {
+  background: url(/img/arzberger-main.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+#say-project {
+  background: url(/img/say.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
 /* ABOUT */
 .top-greeting {
   margin-top: 10rem;
@@ -195,6 +241,10 @@ aside {
 footer {
   grid-column: 1/13;
   background-color: #4d4d4d;
+}
+
+.project {
+  grid-column: 1/13;
 }
 
 .flex-container {
