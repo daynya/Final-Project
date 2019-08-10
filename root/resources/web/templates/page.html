@@ -53,17 +53,18 @@
                         </main>
                     {{end}}
 
+                    {{if index .Obj.Regions "aside"}}
+                        <aside>
+                            {{index .Obj.Regions "aside"}}
+                        </aside>
+                    {{end}}
+
                     {{if index .Obj.Regions "section"}}
                         <section>
                             {{index .Obj.Regions "section"}}
                         </section>
                     {{end}}
 
-                    {{if index .Obj.Regions "aside"}}
-                        <aside>
-                            {{index .Obj.Regions "aside"}}
-                        </aside>
-                    {{end}}
                 </div>
 
             {{if index .Obj.Regions "footer"}}

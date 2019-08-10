@@ -21,7 +21,7 @@ h6 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 h2 {
@@ -42,16 +42,16 @@ h6 {
     font-style: italic;
 }
 
-.container {
-    background-color: #f0f0f0;
+.title-block {
+    margin: 10rem auto 3rem auto;
 }
 
 .title {
-    margin: 25rem auto 3rem auto;
+    margin: 1rem auto;
+    text-align: right;
 }
 
 .intro {
-    margin-bottom: 6rem;
     font-size: 1.2rem;
 }
 
@@ -94,34 +94,28 @@ a:hover {
     margin: 30px auto;
 }
 
+@mixin news-feed-img {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+}
+
 #card-memory-image {
     background: url(/img/memory.png) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
+    @include news-feed-img;
 }
 
 #card-arz-image {
     background: url(/img/arz.png) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
+    @include news-feed-img;
 }
 
 #card-daynyacom-image {
     background: url(/img/daynyacom.png) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
+    @include news-feed-img;
 }
 
 .page-title {
@@ -129,6 +123,21 @@ a:hover {
     text-align: center;
 }
 
+.icon {
+    font-size: 5rem;
+    color: white;
+    margin: 1rem;
+    transition: .5s;
+}
+
+.icon:hover {
+    color: #c8f542;
+}
+
+.designer-info {
+    font-size: .8rem;
+    margin-top: 20px;
+}
 
 /* PORTFOLIO */
 
@@ -209,32 +218,19 @@ a:hover {
 /* ABOUT */
 
 .top-greeting {
-    margin-top: 10rem;
-    margin-bottom: 1rem;
+    margin: 1rem auto;
 }
 
 .headshot {
-    max-width: 100%;
+    max-width: 250px;
     display: block;
     height: auto;
-    margin: 15rem 5rem;
+    margin: auto;
 }
 
 .find-me {
     color: white;
 }
-
-.icon {
-    font-size: 5rem;
-    color: white;
-    margin: 2rem;
-    transition: .5s;
-}
-
-.icon:hover {
-    color: #c8f542;
-}
-
 
 /* GRID */
 
@@ -247,11 +243,11 @@ main {
 }
 
 section {
-    grid-column: 1 / 8;
+    grid-column: 1 / 13;
 }
 
 aside {
-    grid-column: 8 / 13;
+    grid-column: 1 / 13;
 }
 
 .grid-container {
@@ -267,13 +263,17 @@ aside {
     margin: 0 auto;
 }
 
+.container {
+    padding: 10%;
+}
+
 .news-feed {
     display: grid;
     grid-column: 1 / 13;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: minmax(50px, auto);
     background-color: #4d4d4d;
-    margin-top: 50px;
+    margin-top: 10px;
     padding: 2rem;
 }
 
@@ -281,7 +281,7 @@ aside {
     text-align: center;
     background-color: rgb(218, 218, 218);
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.6), 0 8px 22px 0 rgba(0, 0, 0, 0.6);
-    margin: 2.5rem;
+    margin: 2rem auto;
     transition: .2s;
 }
 
@@ -413,3 +413,65 @@ footer {
 
 /* MEDIA QUERIES */
 
+/* medium */
+@media only screen and (min-width: 800px) {
+    .news-feed {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @mixin news-feed-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #card-memory-image {
+        @include news-feed-img;
+    }
+
+    #card-daynyacom-image {
+        @include news-feed-img;
+    }
+
+    #card-arz-image {
+        @include news-feed-img;
+    }
+
+    .card-title h4 {
+        font-size: 1rem;
+    }
+
+    .card-title h6 {
+        font-size: .9rem;
+    }
+        
+    section {
+        grid-column: 1 / 8;
+    }
+
+    aside {
+        grid-column: 8 / 13;
+    }
+
+    .headshot {
+        max-width: 100%;
+    }
+
+    .top-greeting {
+        margin-top: 10rem;
+    }
+}
+
+/*
+.title {
+    margin: 25rem auto 3rem auto;
+}
+*/
+
+
+/* large */
+
+/*
+.title {
+    margin: 25rem auto 3rem auto;
+}
+*/
