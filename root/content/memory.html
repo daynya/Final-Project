@@ -19,7 +19,7 @@
     To establish a structure for the game, I started with a standard HTML setup. 
     I included a scoreboard and a gameboard.
 </p>
-<pre>
+<pre class="line-numbers">
     <code class="language-html">
 &lt;div class=&quot;card&quot; data-icon=&quot;cat&quot;&gt;
     &lt;i class=&quot;fas fa-cat fa-5x card-front&quot;&gt;&lt;/i&gt;
@@ -46,7 +46,7 @@
     To begin the game, the cards must be shuffled. Below is my <span class="code">shuffleCards</span> 
     function.
 </p>
-<pre>
+<pre class="line-numbers">
     <code class="language-javascript">
 function shuffleCards() {
     cards.forEach(card => {
@@ -71,7 +71,7 @@ function shuffleCards() {
     The next task is to make the cards display properly when clicked, and also to assign 
     a "first" or "second" status to them to allow the match and win checks to take place.
 </p>
-<pre>
+<pre class="line-numbers">
     <code class="language-javascript">
 function flipCard() {
     if (lockBoard) return;
@@ -110,7 +110,7 @@ function flipCard() {
 <p>
     The next task is to see if the cards match.
 </p>
-<pre>
+<pre class="line-numbers">
     <code class="language-javascript">
 function checkForMatch() {
     let isMatch = firstCard.dataset.icon === secondCard.dataset.icon;
@@ -148,7 +148,7 @@ function checkForMatch() {
 <p>
     When a match is not made, then it's the other player's turn.
 </p>
-<pre>
+<pre class="line-numbers">
     <code class="language-html">
 &lt;div id=&quot;scoreboard&quot; class=&quot;row player-panel&quot;&gt;
 &lt;div class=&quot;col player-0-panel active&quot;&gt;
@@ -169,7 +169,7 @@ function checkForMatch() {
     In my HTML file, I included a div for each player. One of the player divs has a class
     of <span class="code">active</span> added by default.
 </p>
-<pre>
+<pre class="line-numbers">
     <code class="language-javascript">
 function nextPlayer() {
     if (activePlayer === 0) {
@@ -193,7 +193,7 @@ function nextPlayer() {
 </p>
 <h6 class="project-subtitle">Calculate a winner</h6>
 <p>When the cards have all been flipped over, a winner must be declared.</p>
-<pre>
+<pre class="line-numbers">
     <code class="language-javascript">
 function checkForWin() {
     if (scores[0] + scores[1] == 8) {
@@ -243,7 +243,7 @@ function updateWinner() {
     The players need an ability to start a new game, or to have one load automatically when
     their current game is complete.
 </p>
-<pre>
+<pre class="line-numbers">
     <code class="language-javascript">
 function resetGame() {
     secondFlip = false;
