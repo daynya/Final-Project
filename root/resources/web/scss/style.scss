@@ -30,12 +30,16 @@ h2 {
 
 p,
 h3 {
-    line-height: 1.15;
+    line-height: 1.25;
 }
 
 h4 {
     font-size: 1.25rem;
     margin: 20px auto 10px auto;
+}
+
+h6 {
+    font-style: italic;
 }
 
 .container {
@@ -193,7 +197,14 @@ a:hover {
     margin: 20px auto 10px auto;
 }
 
+.game-link {
+    margin: 20px auto 20px auto;
+    font-size: 1.5rem;
+}
 
+.list {
+    line-height: 1.5;
+}
 
 /* ABOUT */
 
