@@ -157,7 +157,7 @@ a:hover {
 
 .project-title h4 {
   text-align: center;
-  margin: 5% auto 10% auto;
+  margin: 2% auto 10% auto;
 }
 
 .project-link {
@@ -210,8 +210,8 @@ a:hover {
 }
 
 .design-main-img {
-  max-height: 500px;
-  width: auto;
+  max-width: 100%;
+  height: auto;
   display: block;
   margin: 20px auto 30px auto;
 }
@@ -233,6 +233,17 @@ a:hover {
 
 .list {
   line-height: 1.5;
+}
+
+pre {
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+.project-details {
+  max-width: 80vw;
+  margin: auto;
 }
 
 /* ABOUT */

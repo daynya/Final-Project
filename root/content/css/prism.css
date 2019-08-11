@@ -33,7 +33,7 @@ https://prismjs.com/download.html#themes=prism-coy&languages=markup+css+clike+ja
  pre[class*="language-"] {
      position: relative;
      margin: .5em 0;
-     overflow: visible;
+     overflow: auto;
      padding: 0;
  }
  pre[class*="language-"]>code {
