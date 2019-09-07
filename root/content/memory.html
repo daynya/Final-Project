@@ -22,14 +22,14 @@
     </p>
     <pre class="line-numbers">
         <code class="language-html">
-    &lt;div class=&quot;card&quot; data-icon=&quot;cat&quot;&gt;
-        &lt;i class=&quot;fas fa-cat fa-5x card-front&quot;&gt;&lt;/i&gt;
-        &lt;img class=&quot;card-back&quot; src=&quot;img/question.png&quot; alt=&quot;question mark&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;card&quot; data-icon=&quot;cat&quot;&gt;
-        &lt;i class=&quot;fas fa-cat fa-5x card-front&quot;&gt;&lt;/i&gt;
-        &lt;img class=&quot;card-back&quot; src=&quot;img/question.png&quot; alt=&quot;question mark&quot;&gt;
-    &lt;/div&gt;
+            &lt;div class=&quot;card&quot; data-icon=&quot;cat&quot;&gt;
+                &lt;i class=&quot;fas fa-cat fa-5x card-front&quot;&gt;&lt;/i&gt;
+                &lt;img class=&quot;card-back&quot; src=&quot;img/question.png&quot; alt=&quot;question mark&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card&quot; data-icon=&quot;cat&quot;&gt;
+                &lt;i class=&quot;fas fa-cat fa-5x card-front&quot;&gt;&lt;/i&gt;
+                &lt;img class=&quot;card-back&quot; src=&quot;img/question.png&quot; alt=&quot;question mark&quot;&gt;
+            &lt;/div&gt;
         </code>
     </pre>
     <p>
@@ -49,12 +49,12 @@
     </p>
     <pre class="line-numbers">
         <code class="language-javascript">
-    function shuffleCards() {
-        cards.forEach(card => {
-            let randomPos = Math.floor(Math.random() * 16);
-            card.style.order = randomPos;
-        });
-    }
+            function shuffleCards() {
+                cards.forEach(card => {
+                    let randomPos = Math.floor(Math.random() * 16);
+                    card.style.order = randomPos;
+                });
+            }
         </code>
     </pre>
     <p>
@@ -74,23 +74,23 @@
     </p>
     <pre class="line-numbers">
         <code class="language-javascript">
-    function flipCard() {
-        if (lockBoard) return;
+            function flipCard() {
+                if (lockBoard) return;
 
-        if (this === firstCard) return; 
+                if (this === firstCard) return; 
 
-        this.classList.add('flip');
+                this.classList.add('flip');
 
-        if (!secondFlip) {
-            secondFlip = true;
-            firstCard = this;
+                if (!secondFlip) {
+                    secondFlip = true;
+                    firstCard = this;
 
-        } else {
-            secondCard = this;
-            checkForMatch();
-            checkForWin();
-        }
-    }
+                } else {
+                    secondCard = this;
+                    checkForMatch();
+                    checkForWin();
+                }
+            }
         </code>
     </pre>
     <p>
@@ -113,25 +113,25 @@
     </p>
     <pre class="line-numbers">
         <code class="language-javascript">
-    function checkForMatch() {
-        let isMatch = firstCard.dataset.icon === secondCard.dataset.icon;
+            function checkForMatch() {
+                let isMatch = firstCard.dataset.icon === secondCard.dataset.icon;
 
-        if (isMatch) {
-            updateMatchColor();
-            disableCards(); 
-            updateScore();
+                if (isMatch) {
+                    updateMatchColor();
+                    disableCards(); 
+                    updateScore();
 
-            setTimeout(() => {
-                updateScoreboard();
-            }, 500);
-        } else {
-            unflipCards();
+                    setTimeout(() => {
+                        updateScoreboard();
+                    }, 500);
+                } else {
+                    unflipCards();
 
-            setTimeout(() => {
-                nextPlayer();
-            }, 1500);
-        }
-    }
+                    setTimeout(() => {
+                        nextPlayer();
+                    }, 1500);
+                }
+            }
     </code>
     </pre>
     <p>
@@ -151,19 +151,19 @@
     </p>
     <pre class="line-numbers">
         <code class="language-html">
-    &lt;div id=&quot;scoreboard&quot; class=&quot;row player-panel&quot;&gt;
-    &lt;div class=&quot;col player-0-panel active&quot;&gt;
-        &lt;div class=&quot;player-name&quot; id=&quot;player-0&quot;&gt;BLUE PLAYER&lt;/div&gt;
-        &lt;div class=&quot;player-score&quot; id=&quot;score-0&quot;&gt;0&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col&quot;&gt;
-        &lt;button id=&quot;new-game&quot;&gt;NEW GAME&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col player-1-panel&quot;&gt;
-        &lt;div class=&quot;player-name&quot; id=&quot;player-1&quot;&gt;RED PLAYER&lt;/div&gt;
-        &lt;div class=&quot;player-score&quot; id=&quot;score-1&quot;&gt;0&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
+            &lt;div id=&quot;scoreboard&quot; class=&quot;row player-panel&quot;&gt;
+            &lt;div class=&quot;col player-0-panel active&quot;&gt;
+                &lt;div class=&quot;player-name&quot; id=&quot;player-0&quot;&gt;BLUE PLAYER&lt;/div&gt;
+                &lt;div class=&quot;player-score&quot; id=&quot;score-0&quot;&gt;0&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col&quot;&gt;
+                &lt;button id=&quot;new-game&quot;&gt;NEW GAME&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col player-1-panel&quot;&gt;
+                &lt;div class=&quot;player-name&quot; id=&quot;player-1&quot;&gt;RED PLAYER&lt;/div&gt;
+                &lt;div class=&quot;player-score&quot; id=&quot;score-1&quot;&gt;0&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
         </code>
     </pre>
     <p>
@@ -172,17 +172,17 @@
     </p>
     <pre class="line-numbers">
         <code class="language-javascript">
-    function nextPlayer() {
-        if (activePlayer === 0) {
-            activePlayer = 1;
-            document.querySelector('.player-0-panel').classList.toggle('active');
-            document.querySelector('.player-1-panel').classList.toggle('active');
-        } else {
-            activePlayer = 0;
-            document.querySelector('.player-0-panel').classList.toggle('active');
-            document.querySelector('.player-1-panel').classList.toggle('active');
-        }
-    }
+            function nextPlayer() {
+                if (activePlayer === 0) {
+                    activePlayer = 1;
+                    document.querySelector('.player-0-panel').classList.toggle('active');
+                    document.querySelector('.player-1-panel').classList.toggle('active');
+                } else {
+                    activePlayer = 0;
+                    document.querySelector('.player-0-panel').classList.toggle('active');
+                    document.querySelector('.player-1-panel').classList.toggle('active');
+                }
+            }
         </code>
     </pre>
     <p>
@@ -196,37 +196,37 @@
     <p>When the cards have all been flipped over, a winner must be declared.</p>
     <pre class="line-numbers">
         <code class="language-javascript">
-    function checkForWin() {
-        if (scores[0] + scores[1] == 8) {
-            // The Timeout function here is to allow the cards to finish
-            // flipping and updating color before showing the winner.
-            setTimeout(() => {
-                updateWinner();
-            }, 1000);
-        }
-    }
+            function checkForWin() {
+                if (scores[0] + scores[1] == 8) {
+                    // The Timeout function here is to allow the cards to finish
+                    // flipping and updating color before showing the winner.
+                    setTimeout(() => {
+                        updateWinner();
+                    }, 1000);
+                }
+            }
 
-    function updateWinner() {
-        if (scores[0] > scores[1]) {
-            document.getElementById('scoreboard').style.display = 'none';
-            document.getElementById('winner-alert').style.display = 'block';
-            document.getElementById('winner-alert').style.color = '#044497';
-            document.getElementById('winner-alert').textContent = 'BLUE WINS!';
-        } else if (scores[0] < scores[1]) {
-            document.getElementById('scoreboard').style.display = 'none';
-            document.getElementById('winner-alert').style.display = 'block';
-            document.getElementById('winner-alert').style.color = 'red';
-            document.getElementById('winner-alert').textContent = 'RED WINS!';
-        } else {
-            document.getElementById('scoreboard').style.display = 'none';
-            document.getElementById('winner-alert').style.display = 'block';
-            document.getElementById('winner-alert').textContent = 'TIE GAME, TRY AGAIN!';
-        }
+            function updateWinner() {
+                if (scores[0] > scores[1]) {
+                    document.getElementById('scoreboard').style.display = 'none';
+                    document.getElementById('winner-alert').style.display = 'block';
+                    document.getElementById('winner-alert').style.color = '#044497';
+                    document.getElementById('winner-alert').textContent = 'BLUE WINS!';
+                } else if (scores[0] < scores[1]) {
+                    document.getElementById('scoreboard').style.display = 'none';
+                    document.getElementById('winner-alert').style.display = 'block';
+                    document.getElementById('winner-alert').style.color = 'red';
+                    document.getElementById('winner-alert').textContent = 'RED WINS!';
+                } else {
+                    document.getElementById('scoreboard').style.display = 'none';
+                    document.getElementById('winner-alert').style.display = 'block';
+                    document.getElementById('winner-alert').textContent = 'TIE GAME, TRY AGAIN!';
+                }
 
-        setTimeout(() => {
-            resetGame();
-        }, 1500);
-    }
+                setTimeout(() => {
+                    resetGame();
+                }, 1500);
+            }
         </code>
     </pre>
     <p>
@@ -246,32 +246,32 @@
     </p>
     <pre class="line-numbers">
         <code class="language-javascript">
-    function resetGame() {
-        secondFlip = false;
-        lockBoard = false;
-        firstCard = null;
-        secondCard = null;
-        scores = [0,0];
-        activePlayer = 0;
+            function resetGame() {
+                secondFlip = false;
+                lockBoard = false;
+                firstCard = null;
+                secondCard = null;
+                scores = [0,0];
+                activePlayer = 0;
 
-        cards.forEach(card => card.addEventListener('click', flipCard));
-        cards.forEach(card => card.classList.remove('flip'));
-        
-        cards.forEach(card => card.classList.remove('blue'));
-        cards.forEach(card => card.classList.remove('red'));
+                cards.forEach(card => card.addEventListener('click', flipCard));
+                cards.forEach(card => card.classList.remove('flip'));
+                
+                cards.forEach(card => card.classList.remove('blue'));
+                cards.forEach(card => card.classList.remove('red'));
 
-        lockBoard = true;
+                lockBoard = true;
 
-        setTimeout(() => {
-            shuffleCards();
-            lockBoard = false;
-        }, 1000);
+                setTimeout(() => {
+                    shuffleCards();
+                    lockBoard = false;
+                }, 1000);
 
-        document.getElementById('score-0').textContent = '0';
-        document.getElementById('score-1').textContent = '0';
-        document.getElementById('scoreboard').style.display = '';
-        document.getElementById('winner-alert').style.display = 'none';
-    }
+                document.getElementById('score-0').textContent = '0';
+                document.getElementById('score-1').textContent = '0';
+                document.getElementById('scoreboard').style.display = '';
+                document.getElementById('winner-alert').style.display = 'none';
+            }
         </code>
     </pre>
     <p>
@@ -301,5 +301,20 @@
         tricky, but it gave me a good opportunity to learn some new tricks.
     </p>
     <h3 class="game-link"><a href="memory-game/" class="link">Click here to play the game!</a></h3>
+</div>
+<div class="contact">
+    <div class="flex-container">
+        <a href="https://github.com/daynya" target="_blank">
+            <i class="fab fa-github-square icon"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/daynya-quigley-187a7416/" 
+        target="_blank">
+            <i class="fab fa-linkedin icon"></i>
+        </a>
+        <a href="mailto: daynya@gmail.com">
+            <i class="fas fa-envelope-square icon"></i>
+        </a>
+    </div>
+    <p>Designed and built by Daynya Quigley, 2019</p>
 </div>
 ---
