@@ -39,43 +39,43 @@
                         </ul>
                     </nav>
             </div>
-                <div class="grid-container">
-                    {{if index .Obj.Regions "header"}}
-                        <header>
-                            {{index .Obj.Regions "header"}}
-                        </header>
-                    {{end}}
+            <div class="grid-container">
+                {{if index .Obj.Regions "header"}}
+                    <header>
+                        {{index .Obj.Regions "header"}}
+                    </header>
+                {{end}}
 
-                    {{if index .Obj.Regions "main"}}
-                        <main>
-                            {{index .Obj.Regions "main"}}
-                        </main>
-                    {{end}}
+                {{if index .Obj.Regions "main"}}
+                    <main>
+                        {{index .Obj.Regions "main"}}
+                    </main>
+                {{end}}
 
-                    {{if index .Obj.Regions "aside"}}
-                        <aside>
-                            {{index .Obj.Regions "aside"}}
-                        </aside>
-                    {{end}}
+                {{if index .Obj.Regions "aside"}}
+                    <aside>
+                        {{index .Obj.Regions "aside"}}
+                    </aside>
+                {{end}}
 
-                    {{if index .Obj.Regions "section"}}
-                        <section>
-                            {{index .Obj.Regions "section"}}
-                        </section>
-                    {{end}}
+                {{if index .Obj.Regions "section"}}
+                    <section>
+                        {{index .Obj.Regions "section"}}
+                    </section>
+                {{end}}
 
-                </div>
             </div>
+        </div>
 
-            {{if index .Obj.Regions "footer"}}
-                <footer>
-                    {{index .Obj.Regions "footer"}}
-                </footer>
-            {{end}}
+        {{if index .Obj.Regions "footer"}}
+            <footer>
+                {{index .Obj.Regions "footer"}}
+            </footer>
+        {{end}}
 
-            <div>
-                {{.Obj.Markup}}
-            </div>
+        <div>
+            {{.Obj.Markup}}
+        </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="{{ .Obj.Rel "scripts/site.js" }}"></script>

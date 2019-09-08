@@ -159,6 +159,11 @@ a:hover {
     margin: 2% auto 10% auto;
 }
 
+.caption {
+    text-align: center;
+    font-size: .8rem;
+}
+
 .project-link {
     text-decoration: none;
     color: black;
@@ -199,11 +204,20 @@ a:hover {
     @include project-img;
 }
 
-.design-main-img {
+@mixin design-img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+.design-main-img {
+    @include design-img;
     margin: 20px auto 30px auto;
+}
+
+.design-inline-img {
+    @include design-img;
+    margin: 40px auto 10px auto;
 }
 
 .project-page-title {
