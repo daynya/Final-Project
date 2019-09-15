@@ -89,6 +89,12 @@ a:hover {
     background-size: 4px 50px;
 }
 
+.list {
+    line-height: 1.5;
+}
+
+/* NEWSFEED */
+
 .news-link {
     text-decoration: none;
     color: black;
@@ -145,6 +151,22 @@ a:hover {
 
 /* PORTFOLIO */
 
+@mixin project-img {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+}
+
+@mixin design-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .project {
     margin: 10% auto 0 auto;
     transition: .2s;
@@ -169,15 +191,32 @@ a:hover {
     color: black;
 }
 
-@mixin project-img {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    border: 1px solid black;
+.design-main-img {
+    @include design-img;
+    margin: 20px auto 30px auto;
 }
+
+.design-inline-img {
+    @include design-img;
+    margin: 40px auto 10px auto;
+}
+
+.project-page-title {
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 40px;
+}
+
+.project-subtitle {
+    margin: 20px auto 10px auto;
+}
+
+.project-details {
+    max-width: 80vw;
+    margin: auto;
+}
+
+/* WEB */
 
 #memory-project {
     background: url(/img/memory-main.png) no-repeat center center;
@@ -204,39 +243,9 @@ a:hover {
     @include project-img;
 }
 
-@mixin design-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.design-main-img {
-    @include design-img;
-    margin: 20px auto 30px auto;
-}
-
-.design-inline-img {
-    @include design-img;
-    margin: 40px auto 10px auto;
-}
-
-.project-page-title {
-    text-align: center;
-    margin-top: 15%;
-    margin-bottom: 40px;
-}
-
-.project-subtitle {
-    margin: 20px auto 10px auto;
-}
-
 .game-link {
     margin: 20px auto 20px auto;
     font-size: 1.5rem;
-}
-
-.list {
-    line-height: 1.5;
 }
 
 pre {
@@ -245,9 +254,11 @@ pre {
     white-space: pre;
 }
 
-.project-details {
-    max-width: 80vw;
-    margin: auto;
+/* DESIGN */
+
+#ysc-project {
+    background: url(/img/ysc-cover.png) no-repeat center center;
+    @include project-img;
 }
 
 /* ABOUT */
