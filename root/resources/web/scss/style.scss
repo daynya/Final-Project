@@ -288,6 +288,37 @@ pre {
     @include project-img;
 }
 
+#ppa-project {
+    background: url(/img/ppa-bc.png) no-repeat center center;
+    @include project-img;
+}
+
+#tomjones-project {
+    background: url(/img/tom-jones-bc.png) no-repeat center center;
+    @include project-img;
+}
+
+#solstice-project {
+    background: url(/img/solstice.png) no-repeat center center;
+    @include project-img;
+}
+
+#fionamiller-project {
+    background: url(/img/fiona-miller-bc.png) no-repeat center center;
+    @include project-img;
+}
+
+#inbloom-project {
+    background: url(/img/in-bloom-logo.png) no-repeat center center;
+    @include project-img;
+}
+
+#emilythompson-project {
+    background: url(/img/emily-thompson-bc.png) no-repeat center center;
+    @include project-img;
+}
+
+
 /* ABOUT */
 
 .top-greeting {
