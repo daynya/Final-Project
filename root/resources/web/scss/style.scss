@@ -55,6 +55,33 @@ h6 {
     text-align: right;
 }
 
+#title-1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+#title-2 {
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+
+#title-3 {
+    animation-duration: 7s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
 .intro {
     font-size: 1.2rem;
 }
