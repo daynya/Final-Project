@@ -25,22 +25,22 @@
         <div class="container">
             <div class="menu-collapsed">
                 <div class="bar"></div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="{{ .Obj.Rel "index.html" }}">HOME</a>
-                            </li>
-                            <li>
-                                <a href="{{ .Obj.Rel "about.html" }}">ABOUT</a>
-                            </li>
-                            <li>
-                                <a href="{{ .Obj.Rel "web.html" }}">WEB DEVELOPMENT</a>
-                            </li>
-                            <li>
-                                <a href="{{ .Obj.Rel "design.html" }}">GRAPHIC DESIGN</a>
-                            </li>
-                        </ul>
-                    </nav>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="{{ .Obj.Rel "index.html" }}">HOME</a>
+                        </li>
+                        <li>
+                            <a href="{{ .Obj.Rel "about.html" }}">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="{{ .Obj.Rel "web.html" }}">WEB DEVELOPMENT</a>
+                        </li>
+                        <li>
+                            <a href="{{ .Obj.Rel "design.html" }}">DESIGN</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div class="grid-container">
                 {{if index .Obj.Regions "header"}}
