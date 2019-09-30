@@ -2,6 +2,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html,
@@ -12,7 +14,7 @@ body {
 }
 
 .container {
-    padding: 6%;
+    padding: 5%;
 }
 
 h1, 
@@ -25,7 +27,7 @@ h6 {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 1.75rem;
 }
 
 h2 {
@@ -38,12 +40,13 @@ h3 {
 }
 
 h4 {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin: 20px auto 10px auto;
 }
 
 h6 {
     font-style: italic;
+    font-size: 1rem;
 }
 
 .title-block {
@@ -51,7 +54,7 @@ h6 {
 }
 
 .title {
-    margin: 2rem auto;
+    margin: 0 auto;
     text-align: right;
 }
 
@@ -88,6 +91,7 @@ h6 {
 
 .intro-paragraph{
     margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 .border {
@@ -506,9 +510,33 @@ footer {
 
 /* MEDIA QUERIES */
 
+/* small */
+@media only screen and (min-width: 450px) {
+    
+    .container {
+        padding: 3%;
+    }
+
+    .intro-paragraph {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .title {
+        margin: .5rem auto;
+    }
+}
+
 /* medium */
 @media only screen and (min-width: 800px) {
     
+    .container {
+        padding: 6%;
+    }
+
     aside {
         grid-column: 8 / 13;
     }
@@ -519,6 +547,10 @@ footer {
 
     h1 {
         font-size: 3rem;
+    }
+
+    .title {
+        margin: 1.2rem auto;
     }
 
     .news-feed {
