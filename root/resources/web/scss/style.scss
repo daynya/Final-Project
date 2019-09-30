@@ -457,7 +457,7 @@ footer {
 .menu-expanded {
     transition: all .25s;
     text-align: center;
-    line-height: 24vh;
+    line-height: 22vh;
     height: 100%;
     width: 100%;
     border-radius: 0px;
@@ -471,6 +471,7 @@ footer {
         z-index: 2;
         list-style: none;
         margin: 0;
+        margin-top: 12vh;
         padding: 0;
         border: 0;
         vertical-align: baseline;
