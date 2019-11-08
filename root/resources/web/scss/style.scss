@@ -36,7 +36,7 @@ h2 {
 
 p,
 h3 {
-    line-height: 1.25;
+    line-height: 1.5;
 }
 
 h4 {
@@ -224,7 +224,7 @@ a:hover {
 
 .design-main-img {
     @include design-img;
-    margin: 20px auto 30px auto;
+    margin: 1.5em auto;
 }
 
 .design-inline-img {
@@ -239,7 +239,7 @@ a:hover {
 }
 
 .project-subtitle {
-    margin: 20px auto 10px auto;
+    margin: 30px auto 10px auto;
 }
 
 .project-details {
@@ -247,8 +247,9 @@ a:hover {
     margin: auto;
 }
 
-.project-details p {
-    margin-bottom: 3%;
+ul {
+    list-style-type: square;
+    list-style-position: inside;
 }
 
 /* WEB */
@@ -283,10 +284,17 @@ a:hover {
     font-size: 1.5rem;
 }
 
-pre {
-    overflow: auto;
-    word-wrap: normal;
-    white-space: pre;
+code[class*="language-"],
+pre[class*="language-"] {
+    text-shadow: none;
+}
+
+.token.operator {
+    background: none;
+}
+
+pre[class*="language-"].line-numbers {
+    margin: 1.5em 0;
 }
 
 /* DESIGN */
@@ -338,6 +346,12 @@ pre {
     display: block;
     height: auto;
     margin: 2rem auto;
+    transition: .5s;
+    opacity: .8;
+}
+
+.headshot:hover {
+    opacity: 1;
 }
 
 .find-me {
@@ -557,6 +571,22 @@ footer {
         font-size: 3rem;
     }
 
+    h4 {
+        font-size: 2rem;
+    }
+
+    h6 {
+        font-size: 1.5rem;
+    }
+
+    p,
+    .project-details {
+        & ul {
+            font-size: 1.1rem;
+            line-height: 1.75rem;
+        }
+    }
+
     .title {
         margin: 1.2rem auto;
     }
@@ -604,6 +634,14 @@ footer {
 
     .project-title h4 {
         margin: 2% auto;
+    }
+
+    .project-subtitle {
+        font-size: 1.75rem;
+    }
+
+    .design-main-img {
+        margin: 2em auto;
     }
 
 }
