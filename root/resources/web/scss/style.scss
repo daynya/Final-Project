@@ -530,23 +530,18 @@ footer {
 
 /* small */
 @media only screen and (min-width: 450px) {
-    
-    .container {
+   .container {
         padding: 3%;
     }
-
     .grid-container {
         padding: 5%;
     }
-
     .intro-paragraph {
         font-size: 1.2rem;
     }
-
     h1 {
         font-size: 2rem;
     }
-
     .title {
         margin: .5rem auto;
     }
@@ -554,94 +549,116 @@ footer {
 
 /* medium */
 @media only screen and (min-width: 800px) {
-    
     .container {
         padding: 6%;
     }
-
     aside {
         grid-column: 8 / 13;
     }
-
     main {
         grid-column: 1 / 8;
     }
-
     h1 {
         font-size: 3rem;
     }
-
     h4 {
         font-size: 2rem;
     }
-
     h6 {
         font-size: 1.5rem;
     }
-
-    p,
+    p {
+        font-size: 1.1rem;
+        line-height: 1.75rem;
+    }
     .project-details {
         & ul {
             font-size: 1.1rem;
             line-height: 1.75rem;
         }
     }
-
     .title {
         margin: 1.2rem auto;
     }
-
     .news-feed {
         grid-template-columns: 1fr 1fr 1fr;
     }
-
     @mixin news-feed-img {
         width: 200px;
         height: 200px;
     }
-
     #card-memory-image {
         @include news-feed-img;
     }
-
     #card-daynyacom-image {
         @include news-feed-img;
     }
-
     #card-arz-image {
         @include news-feed-img;
     }
-
     .card-title h4 {
         font-size: 1rem;
     }
-
     .card-title h6 {
         font-size: .9rem;
     }
-
     .headshot {
         max-width: 100%;
     }
-
     .top-greeting {
         margin-top: 10rem;
     }
-
     .page-title {
         font-size: 4rem;
     }
-
     .project-title h4 {
         margin: 2% auto;
     }
-
     .project-subtitle {
         font-size: 1.75rem;
     }
-
     .design-main-img {
         margin: 2em auto;
     }
+}
 
+/* large */
+@media only screen and (min-width: 1400px) {
+    .container {
+        padding: 4%;
+    }
+    .grid-container,
+    .news-feed {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+    }
+    .project-details {
+        & ul {
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+        }
+    }
+    .menu-expanded {
+        & ul {
+            & a {
+                font-size: 3em;
+            }
+        }
+    }
+    .headshot {
+        margin: 2rem;
+    }
+    .design-main-img {
+        margin: 3rem auto;
+    }
 }
