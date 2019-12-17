@@ -525,6 +525,16 @@ footer {
         }
     }
 }
+.breadcrumb-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.spacer {
+    margin: 0 1%;
+}
+.current-page {
+    opacity: .5;
+}
 
 /* MEDIA QUERIES */
 
