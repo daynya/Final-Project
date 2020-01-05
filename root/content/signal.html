@@ -1,79 +1,99 @@
 ---
-@{main}
+@{section}
+<div class="breadcrumb-container">
+    <a href="index.html" class="link">home </a>
+    <span class="spacer">//</span>
+    <a href="web.html" class="link">web development</a>
+    <span class="spacer">//</span><span class="current-page">signal</span>
+</div>
 <div class="project-details">
     <h1 class="project-page-title">Signal</h1>
     <p>
-        Signal is a pre-open source project that I am helping to test. I've used it on the newest iteration of this website, 
-        as well as on my <a href="say.html" class="link">Strong Ass Yoga</a> site, and the online catalog I designed for <a href="arzberger.html" class="link">Arzberger.</a>
+        Signal is a pre-open source project that I am helping to test. I've used it on the newest iteration of this
+        website,
+        as well as on my <a href="say.html" class="link">Strong Ass Yoga</a> site, and the online catalog I designed for
+        <a href="arzberger.html" class="link">Arzberger.</a>
     </p>
     <p>
-        Signal is a static site generator. It uses a document with markup to create a "page", which then serves as a template
-        for the pages within the site. Because Signal works with files (in git), and does not provide a web interface like WordPress, 
-        it is not the most end user-friendly option. On websites like mine, with a portfolio, it is ideal to avoid having to recode each individual page.
+        Signal is a static site generator. It uses a document with markup to create a "page", which then serves as a
+        template
+        for the pages within the site. Because Signal works with files (in git), and does not provide a web interface
+        like WordPress,
+        it is not the most end user-friendly option. On websites like mine, with a portfolio, it is ideal to avoid
+        having to recode each individual page.
     </p>
     <p>
-        Below is a sample of my "page"/template from the Arzberger project. The markup shown here is used to define the "page" as the template,
-        then to signify that the container div as the place where the content from the individual HTML pages using this template will be placed.
-        The template is stored in the root folder of the project, and the content pages thus pulls from it.
+        Below is a sample of my "page" template from the daynya.com project. The markup shown here is used to define the
+        "page" as the template, then set up a grid-container, in which the content regions will be merged with the
+        template upon the site build. Each individual page can contain the sections shown below, and the template will
+        look for them and know where to place them. The template is stored in the root folder of the project, and the
+        content pages thus pull from it to create the final page seen, stored in the build folder.
     </p>
     <pre class="line-numbers">
         <code class="language-html">
-            {{define &quot;page&quot;}}
-            &lt;!DOCTYPE html&gt;
-            &lt;html lang=&quot;en&quot;&gt;
-            
-                &lt;head&gt;
-                    &lt;title&gt;Arzberger&lt;/title&gt;
-            
-                    &lt;meta charset=&quot;utf-8&quot;/&gt;
-                    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-                    &lt;meta hhtp-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE-Edge&quot;&gt;
-            
-                    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css&quot; integrity=&quot;sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO&quot; crossorigin=&quot;anonymous&quot;&gt;
-                    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://use.fontawesome.com/releases/v5.6.3/css/all.css&quot; integrity=&quot;sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/&quot; crossorigin=&quot;anonymous&quot;&gt;
-                    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/custom.css&quot;&gt;
-                &lt;/head&gt;
-            
-                &lt;body&gt;
-                    &lt;nav class=&quot;navbar  navbar-light bg-light&quot;&gt;
-                        &lt;a class=&quot;navbar-brand mb-0 h1&quot; href=&quot;index.html&quot;&gt;&lt;img src=&quot;img/arz_logo_name.svg&quot; class=&quot;navbar-logo&quot;&gt;&lt;/a&gt;
-                        &lt;button  class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarSupportedContent&quot; aria-controls=&quot;navbarSupportedContent&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
-                            &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
-                        &lt;/button&gt;
-                        
-                        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarSupportedContent&quot;&gt;
-                            &lt;ul class=&quot;navbar-nav mr-auto&quot;&gt;
-                                &lt;li class=&quot;nav-item arz-link&quot;&gt;
-                                    &lt;a class=&quot;nav-link&quot; href=&quot;index.html&quot;&gt;HOME &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;
-                                &lt;/li&gt;
-                                &lt;li class=&quot;nav-item arz-link&quot;&gt;
-                                    &lt;a class=&quot;nav-link&quot; href=&quot;answers.html&quot;&gt;ANSWERS&lt;/a&gt;
-                                &lt;/li&gt;
-                                &lt;li class=&quot;nav-item arz-link&quot;&gt;
-                                    &lt;a class=&quot;nav-link&quot; href=&quot;album.html&quot;&gt;ALBUM&lt;/a&gt;
-                                &lt;/li&gt;
-                            &lt;/ul&gt;
-                            
-                        &lt;/div&gt;
-                    &lt;/nav&gt;
-                    
-                    &lt;script src=&quot;https://code.jquery.com/jquery-3.3.1.slim.min.js&quot; integrity=&quot;sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-                    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js&quot; integrity=&quot;sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-                    &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js&quot; integrity=&quot;sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-            
-                    &lt;div class=&quot;container&quot;&gt;
-                            {{.Obj.Markup}}
-                    &lt;/div&gt;
-                    
-                &lt;/body&gt;
-            &lt;/html&gt;
-            {{end}}
-        </code>
+            &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;menu-collapsed&quot;&gt;
+                &lt;div class=&quot;bar&quot;&gt;&lt;/div&gt;
+                &lt;nav&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;
+                            &lt;a href=&quot;{{ .Obj.Rel &quot;index.html&quot; }}&quot;&gt;HOME&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href=&quot;{{ .Obj.Rel &quot;about.html&quot; }}&quot;&gt;ABOUT&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href=&quot;{{ .Obj.Rel &quot;web.html&quot; }}&quot;&gt;WEB DEVELOPMENT&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href=&quot;{{ .Obj.Rel &quot;design.html&quot; }}&quot;&gt;GRAPHIC DESIGN&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;grid-container&quot;&gt;
+                {{if index .Obj.Regions &quot;header&quot;}}
+                    &lt;header&gt;
+                        {{index .Obj.Regions &quot;header&quot;}}
+                    &lt;/header&gt;
+                {{end}}
+
+                {{if index .Obj.Regions &quot;main&quot;}}
+                    &lt;main&gt;
+                        {{index .Obj.Regions &quot;main&quot;}}
+                    &lt;/main&gt;
+                {{end}}
+
+                {{if index .Obj.Regions &quot;aside&quot;}}
+                    &lt;aside&gt;
+                        {{index .Obj.Regions &quot;aside&quot;}}
+                    &lt;/aside&gt;
+                {{end}}
+
+                {{if index .Obj.Regions &quot;section&quot;}}
+                    &lt;section&gt;
+                        {{index .Obj.Regions &quot;section&quot;}}
+                    &lt;/section&gt;
+                {{end}}
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        {{if index .Obj.Regions &quot;footer&quot;}}
+            &lt;footer&gt;
+                {{index .Obj.Regions &quot;footer&quot;}}
+            &lt;/footer&gt;
+        {{end}}
+
+        &lt;div&gt;
+            {{.Obj.Markup}}
+        &lt;/div&gt;
+    
+        &lt;script src=&quot;{{ .Obj.Rel &quot;scripts/site.js&quot; }}&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;{{ .Obj.Rel &quot;scripts/prism.js&quot; }}&quot;&gt;&lt;/script&gt;
+           
+    </code>
     </pre>
-    <p>
-        The above sample uses Bootstrap for the overall responsive grid, and Font Awesome for the icons in the project.
-        The navigation is coded into the template, and then carries through the entirety of the project, unless the content page
-        indicates that these features get suppressed.
-    </p>
 </div>
 ---
+<!-- -->

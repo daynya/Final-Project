@@ -2,87 +2,91 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <title>Daynya Quigley</title>
+<head>
+    <title>Daynya Quigley</title>
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta hhtp-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta hhtp-equiv="X-UA-Compatible" content="IE-Edge">
 
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&display=swap">
-        <link rel="stylesheet" href="{{ .Obj.Rel "css/prism.css" }}">
-        <link rel="stylesheet" href="{{ .Obj.Rel "css/style.css" }}">
-        {{if index .Obj.Regions "head"}}
-            {{index .Obj.Regions "head"}}
-        {{end}}
-    </head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&display=swap">
+    <link rel="stylesheet" href="{{ .Obj.Rel "css/prism.css" }}">
+    <link rel="stylesheet" href="{{ .Obj.Rel "css/style.css" }}">
+    {{if index .Obj.Regions "head"}}
+    {{index .Obj.Regions "head"}}
+    {{end}}
+</head>
 
-    <body>
-        <div class="container">
-            <div class="menu-collapsed">
-                <div class="bar"></div>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="{{ .Obj.Rel "index.html" }}">HOME</a>
-                        </li>
-                        <li>
-                            <a href="{{ .Obj.Rel "about.html" }}">ABOUT</a>
-                        </li>
-                        <li>
-                            <a href="{{ .Obj.Rel "web.html" }}">WEB DEVELOPMENT</a>
-                        </li>
-                        <li>
-                            <a href="{{ .Obj.Rel "design.html" }}">GRAPHIC DESIGN</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="grid-container">
-                {{if index .Obj.Regions "header"}}
-                    <header>
-                        {{index .Obj.Regions "header"}}
-                    </header>
-                {{end}}
-
-                {{if index .Obj.Regions "main"}}
-                    <main>
-                        {{index .Obj.Regions "main"}}
-                    </main>
-                {{end}}
-
-                {{if index .Obj.Regions "aside"}}
-                    <aside>
-                        {{index .Obj.Regions "aside"}}
-                    </aside>
-                {{end}}
-
-                {{if index .Obj.Regions "section"}}
-                    <section>
-                        {{index .Obj.Regions "section"}}
-                    </section>
-                {{end}}
-
-            </div>
+<body>
+    <div class="container">
+        <div class="menu-collapsed">
+            <div class="bar"></div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="{{ .Obj.Rel "index.html" }}">HOME</a>
+                    </li>
+                    <li>
+                        <a href="{{ .Obj.Rel "about.html" }}">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="{{ .Obj.Rel "web.html" }}">WEB DEVELOPMENT</a>
+                    </li>
+                    <li>
+                        <a href="{{ .Obj.Rel "design.html" }}">GRAPHIC DESIGN</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
+        <div class="grid-container">
+            {{if index .Obj.Regions "header"}}
+            <header>
+                {{index .Obj.Regions "header"}}
+            </header>
+            {{end}}
 
-        {{if index .Obj.Regions "footer"}}
-            <footer>
-                {{index .Obj.Regions "footer"}}
-            </footer>
-        {{end}}
+            {{if index .Obj.Regions "main"}}
+            <main>
+                {{index .Obj.Regions "main"}}
+            </main>
+            {{end}}
 
-        <div>
-            {{.Obj.Markup}}
+            {{if index .Obj.Regions "aside"}}
+            <aside>
+                {{index .Obj.Regions "aside"}}
+            </aside>
+            {{end}}
+
+            {{if index .Obj.Regions "section"}}
+            <section>
+                {{index .Obj.Regions "section"}}
+            </section>
+            {{end}}
+
         </div>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    {{if index .Obj.Regions "footer"}}
+    <footer>
+        {{index .Obj.Regions "footer"}}
+    </footer>
+    {{end}}
+
+    <div>
+        {{.Obj.Markup}}
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
     <script src="{{ .Obj.Rel "scripts/site.js" }}"></script>
     <script src="{{ .Obj.Rel "scripts/prism.js" }}"></script>
-       
-    </body>
+
+</body>
+
 </html>
 {{end}}

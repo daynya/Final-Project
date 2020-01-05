@@ -243,6 +243,9 @@ a:hover {
 }
 
 .project-details {
+    & p {
+        margin-top: 3%;
+    }
     max-width: 80vw;
     margin: auto;
 }
@@ -528,6 +531,7 @@ footer {
 .breadcrumb-container {
     display: flex;
     justify-content: flex-end;
+    text-transform: uppercase;
 }
 .spacer {
     margin: 0 1%;
@@ -558,7 +562,7 @@ footer {
 }
 
 /* medium */
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 768px) {
     .container {
         padding: 6%;
     }
@@ -588,6 +592,7 @@ footer {
         }
     }
     .title {
+        font-size: 3rem;
         margin: 1.2rem auto;
     }
     .news-feed {
@@ -651,6 +656,9 @@ footer {
     p {
         font-size: 1.2rem;
         line-height: 1.9rem;
+    }
+    .title {
+        font-size: 4.5rem;
     }
     .project-details {
         & ul {
