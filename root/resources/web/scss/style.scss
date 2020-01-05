@@ -149,8 +149,8 @@ a:hover {
     @include news-feed-img;
 }
 
-#card-arz-image {
-    background: url(/img/arz.png) no-repeat center center;
+#card-gulfstream-image {
+    background: url(/img/gulfstream.png) no-repeat center center;
     @include news-feed-img;
 }
 
@@ -613,7 +613,7 @@ footer {
     #card-daynyacom-image {
         @include news-feed-img;
     }
-    #card-arz-image {
+    #card-gulfstream-image {
         @include news-feed-img;
     }
     .card-title h4 {
