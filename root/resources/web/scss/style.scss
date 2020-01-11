@@ -538,9 +538,7 @@ footer {
     justify-content: flex-end;
     text-transform: uppercase;
     font-size: .7rem;
-    display: block;
     margin: 15px 0 0 0;
-    text-align: right;
 }
 .spacer {
     margin: 0 1%;
@@ -570,6 +568,10 @@ footer {
     }
     .menu-expanded a {
         font-size: 2rem;
+    }
+    .breadcrumb-container {
+        margin-top: 20px;
+        font-size: .8rem;
     }
 }
 
@@ -649,6 +651,9 @@ footer {
     }
     .menu-expanded a {
         font-size: 2.5rem;
+    }
+    .breadcrumb-container {
+        font-size: 1rem;
     }
 }
 
