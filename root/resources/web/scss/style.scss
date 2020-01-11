@@ -514,10 +514,11 @@ footer {
         color: #fff;
         display: block;
         &:hover {
-            background-color: rgba(white, .7);
-            transition: all .15s;
-            letter-spacing: 2px;
-            color: #333;
+            transition: all .5s;
+            letter-spacing: .2em;
+            color: #c8f542;
+            text-decoration: underline;
+            text-underline-offset: .2em;
         }
     }
     .bar {
