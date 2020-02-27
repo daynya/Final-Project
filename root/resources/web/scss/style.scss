@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    padding: 5%;
+    padding: 7%;
 }
 
 h1, 
@@ -199,7 +199,7 @@ a:hover {
 }
 
 .project {
-    margin: 10% auto 0 auto;
+    margin: 20% auto 0 auto;
     transition: .2s;
 }
 
@@ -357,6 +357,11 @@ pre[class*="language-"].line-numbers {
 
 .top-greeting {
     margin: 5rem auto 1rem auto;
+    text-align: center;
+}
+
+.secondary-greeting {
+    text-align: center;
 }
 
 .headshot {
@@ -660,7 +665,13 @@ footer {
         max-width: 100%;
     }
     .top-greeting {
+        font-size: 2.75rem;
         margin-top: 10rem;
+        text-align: left;
+    }
+    .secondary-greeting {
+        margin-right: 1rem;
+        text-align: left;
     }
     .page-title {
         font-size: 4rem;
