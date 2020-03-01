@@ -356,11 +356,12 @@ pre[class*="language-"].line-numbers {
 /* ABOUT */
 
 .top-greeting {
-    margin: 5rem auto 1rem auto;
+    margin: 2rem auto 1rem auto;
     text-align: center;
 }
 
 .secondary-greeting {
+    margin-bottom: 2rem;
     text-align: center;
 }
 
@@ -368,7 +369,7 @@ pre[class*="language-"].line-numbers {
     max-width: 250px;
     display: block;
     height: auto;
-    margin: 2rem auto;
+    margin: 5rem auto 1rem auto;
     transition: .5s;
     opacity: .8;
 }
@@ -614,7 +615,7 @@ footer {
         grid-column: 8 / 13;
     }
     main {
-        grid-column: 1 / 8;
+        grid-column: 1 / 13;
     }
     h1 {
         font-size: 3rem;
@@ -662,15 +663,16 @@ footer {
         font-size: .9rem;
     }
     .headshot {
+        margin-top: 5rem;
         max-width: 100%;
     }
     .top-greeting {
         font-size: 2.75rem;
-        margin-top: 10rem;
+        margin-top: 3rem;
         text-align: left;
     }
     .secondary-greeting {
-        margin-right: 1rem;
+        margin-bottom: 3rem;
         text-align: left;
     }
     .page-title {
@@ -686,7 +688,13 @@ footer {
         font-size: 1.5rem;
     }
     .design-main-img {
-        margin: 2em auto;
+        margin: 4em auto;
+    }
+    pre[class*="language-"].line-numbers {
+        margin: 4em auto;
+    }
+    .list {
+        margin: 1rem 0;
     }
     .menu-expanded a {
         font-size: 2.5rem;
@@ -733,13 +741,25 @@ footer {
         }
     }
     .headshot {
-        margin: 2rem;
+        margin: 7rem auto 3rem auto;
+    }
+    .secondary-greeting {
+        margin-bottom: 4rem;
     }
     .design-main-img {
-        margin: 3rem auto;
+        margin: 5rem auto;
     }
     #gulfstream-project {
         background: url(/img/gs-people.png) no-repeat center bottom;
         @include project-img;
+    }
+    pre[class*="language-"].line-numbers {
+        margin: 5em auto;
+    }
+    .list {
+        margin: 2rem 0;
+    }
+    .game-link {
+        margin: 2rem 0;
     }
 }
