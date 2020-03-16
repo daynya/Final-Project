@@ -597,9 +597,10 @@ footer {
     .design-inline-img,
     pre {
         max-width: 75%;
+        margin: 3.5em auto;
     }
     pre[class*="language-"].line-numbers {
-        margin: 3em auto;
+        margin: 4em auto;
     }
 }
 
