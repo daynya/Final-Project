@@ -563,6 +563,32 @@ footer {
 .current-page {
     opacity: .5;
 }
+#scrollBtn {
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 999;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    visibility: hidden;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+}
+#scrollBtn::after {
+
+}
+#scrollBtn:hover {
+    background-color: #2d2d2d;
+}
+#scrollBtn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 /* MEDIA QUERIES */
 
