@@ -1,3 +1,4 @@
 build
 .idea
 signal.db
+.DS_Store
