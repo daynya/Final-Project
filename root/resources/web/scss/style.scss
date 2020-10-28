@@ -27,7 +27,7 @@ h6 {
 }
 
 h1 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
 }
 
 h2 {
@@ -569,6 +569,13 @@ footer {
 
 
 /* MEDIA QUERIES */
+
+/* extra small phone */
+@media only screen and (min-width: 400px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+}
 
 /* small */
 @media only screen and (min-width: 450px) {
